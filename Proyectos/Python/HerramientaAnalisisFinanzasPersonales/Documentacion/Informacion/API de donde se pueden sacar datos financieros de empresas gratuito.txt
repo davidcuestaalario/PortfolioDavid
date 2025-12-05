@@ -1,0 +1,27 @@
+Documentacion de como funciona la Api:
+https://financialmodelingprep.com/developer/docs/
+
+El link para acceder a los datos de Google
+https://financialmodelingprep.com/api/v3/financials/balance-sheet-statement/GOOGL?apikey=54bb6ead8c064472a07f5fff3fd6d1a4
+
+De donde obtener valores de bolsa para programa
+https://www.rankia.com/foros/bolsa/temas/940756-obtener-valores-bolsa-para-programa
+
+Como usar API Yahoo (programación) - X-Trader
+https://www.x-trader.net/foro/viewtopic.php?t=17996
+
+API Tutorial: Get Started With Yahoo Finance API
+https://blog.api.rakuten.net/api-tutorial-yahoo-finance
+
+yahoo-finance-api-csv/YahooFinance.php at master · wontonst/yahoo-finance-api-csv · GitHub
+https://github.com/wontonst/yahoo-finance-api-csv/blob/master/YahooFinance.php
+
+La API de Bloomberg (BLPAPI) es un conjunto de libre disposición kits de desarrollo de software (SDK) 
+que permiten a los desarrolladores de software crear aplicaciones que consumen los datos del mercado. 
+https://www.bloomberglabs.com/api/
+
+Xignite ofrece un servicio Web SOAP para acceder a cotizaciones de la bolsa de Nueva York (NYSE) y del NASDAQ. 
+http://www.xignite.com/market-data/market-data-cloud-for-developers/
+
+Forex también ofrece su API, y cuentan con un ejemplo "Android Rates Sample" segun una de las imagenes que aparecen en este link. 
+https://www.oanda.com/lang/es/forex-trading/platform/api-platform

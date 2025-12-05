@@ -1,0 +1,101 @@
+# Ejercicio Técnico - vBote API
+
+API RESTful desarrollada con Spring Boot para la gestión de usuarios y sesiones activas. Este proyecto implementa persistencia de datos, seguridad basada en tokens y filtros de auditoría.
+
+## 🚀 Tecnologías Utilizadas
+
+* **Java 17**: Lenguaje principal (Requisito Java 8+).
+* **Spring Boot 3**: Framework para el desarrollo ágil de la API.
+* **Spring Data JPA (Hibernate)**: Para la persistencia y ORM.
+* **H2 Database**: Base de datos en memoria para desarrollo y pruebas.
+* **Lombok**: Para reducir el código repetitivo (Boilerplate) y mejorar la legibilidad.
+* **Gradle**: Gestor de dependencias y automatización de construcción.
+
+## 🛠️ Decisiones de Diseño
+
+Para garantizar la calidad del código, escalabilidad y mantenimiento, se ha optado por una **Arquitectura en Capas**:
+
+1.  **Modelo de Dominio (Entity)**: Clases `User` y `Session` que reflejan fielmente las tablas de base de datos.
+2.  **DTOs (Data Transfer Objects)**: Se han separado los objetos de transferencia (`UserRequestDTO`, `UserResponseDTO`) de las entidades para:
+    * Ocultar datos sensibles (como passwords y IDs internos).
+    * Desacoplar la API de la estructura de base de datos.
+3.  **Mappers**: Componentes dedicados a la transformación Entidad <-> DTO.
+4.  **Servicios**: Capa transaccional (`@Transactional`) donde reside toda la lógica de negocio.
+5.  **Controladores**: Capa REST encargada solo de recibir peticiones y devolver respuestas HTTP adecuadas.
+
+### Seguridad y Requerimientos Técnicos
+* **Filtros (Filters)**: Se han implementado filtros nativos (`OncePerRequestFilter`) en lugar de interceptores para cumplir con los requisitos técnicos:
+    * `RequestLogFilter`: Auditoría de cada petición (Timestamp, Método, Endpoint).
+    * `AuthenticationFilter`: Validación de seguridad. Intercepta las peticiones y verifica la validez del token `Bearer` contra la base de datos.
+* **Base de Datos Volátil**: Se utiliza H2 con un script `data.sql` que precarga usuarios de prueba al iniciar la aplicación.
+
+## ⚙️ Configuración y Ejecución
+
+### Prerrequisitos
+* JDK 17 instalado.
+* Maven (o usar el wrapper incluido `mvnw`).
+
+### Pasos para correr el proyecto
+
+1.  **Clonar/Descargar** el repositorio.
+2.  **Compilar y Ejecutar**:
+    Desde la raíz del proyecto, ejecutar:
+	* En Windows:
+        ```bash
+        ./gradlew bootRun
+        ```
+    * En Linux/Mac:
+        ```bash
+        ./gradlew bootRun
+        ```
+    O importar como proyecto Maven en **Spring Tool Suite (STS)** / Eclipse y ejecutar como *Spring Boot App*.
+
+3.  **Acceso**: La API arrancará en `http://localhost:8080`.
+
+## 📚 Documentación de la API
+
+### 1. Autenticación (Público)
+Para acceder a los endpoints protegidos, primero debe obtener un token.
+
+* **Login**: `POST /api/sessions/login`
+    * Body: `{ "username": "admin", "password": "admin123" }`
+    * Retorna: `{ "token": "uuid-token-...", ... }`
+
+### 2. Usuarios (Requiere Header: `Authorization: Bearer <TOKEN>`)
+
+* **Listar Usuarios**: `GET /api/users`
+    * Filtros opcionales: `?role=ADMIN` o `?username=text`
+* **Crear Usuario**: `POST /api/users`
+* **Obtener por ID**: `GET /api/users/{id}`
+* **Actualizar Usuario**: `PUT /api/users/{id}`
+* **Bloquear Usuario**: `PATCH /api/users/{id}/block`
+
+### 3. Sesiones (Requiere Header: `Authorization: Bearer <TOKEN>`)
+
+* **Listar activas**: `GET /api/sessions`
+* **Logout (Actual)**: `POST /api/sessions/logout?token=<TOKEN>`
+* **Logout (Masivo)**: `POST /api/sessions/logout-all?userId=<ID>`
+
+## 🧪 Datos de Prueba (H2)
+
+La aplicación inicia con los siguientes usuarios precargados:
+
+# Usuarios de ejemplo en `T_USER`
+
+ 👑 ADMINS
+
+| Usuario          | Contraseña | Rol   | Bloqueado | Fecha de creación   |
+|------------------|------------|-------|-----------|---------------------|
+| admin            | admin123   | ADMIN | false     | CURRENT_TIMESTAMP   |
+| adminBloqueado   | admin123   | ADMIN | true      | CURRENT_TIMESTAMP   |
+
+ 👤 NO ADMINS
+
+| Usuario          | Contraseña | Rol   | Bloqueado | Fecha de creación   |
+|------------------|------------|-------|-----------|---------------------|
+| usuario1         | user123    | USER  | false     | CURRENT_TIMESTAMP   |
+| noEsAdmin        | admin123   | USER  | false     | CURRENT_TIMESTAMP   |
+| usuarioBloqueado | user123    | USER  | false     | CURRENT_TIMESTAMP   |
+
+---
+*Entregable para Ejercicio Técnico - vBote*

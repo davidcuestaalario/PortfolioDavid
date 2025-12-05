@@ -1,0 +1,656 @@
+Dia;Mes;Año;Cuenta;Clasificacion;Asunto;Gasto;Ingreso;Descripcion
+29;4;2016;Bankia;Transporte;Autobus;0,7;0;Hospital Ribera - Estacion Renfe
+29;4;2016;Bankia;Transporte;Tren;1,8;0;renfe alcira a carcaixent
+27;4;2016;Bankia;Transporte;Tren;7,5;0;Carcaixent - Valencia norte - ida y vuelta Sin familia Num
+26;4;2016;Bankia;Transporte;Autobus;1,5;0;Carcaixent - Hospital Ribera
+25;4;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent 
+24;4;2016;Bankia;Transporte;Tren;3,7;0;Valencia - Carcaixent
+23;4;2016;Bankia;Ocio;Comida/Cena;9,5;0;Cena con los Companeros de piso y el grupo de musica
+23;4;2016;Bankia;Transporte;Tren;3,7;0;Carcaixent - Valencia
+19;4;2016;Bankia;Transporte;Tren;7,5;0;Carcaixent - Valencia norte - ida y vuelta Sin familia Num
+19;4;2016;Bankia;Transporte;Metro;8,5;0;Bonometro 10 Valencia
+18;4;2016;Bankia;Transporte;Tren;7,5;0;Carcaixent - Valencia norte - ida y vuelta Sin familia Num
+11;4;2016;Bankia;Transporte;Tren;7,5;0;Carcaixent - Valencia norte - ida y vuelta Sin familia Num
+1;4;2016;Bankia;Salario;Pension;0;150;Ingreso mensual
+31;5;2016;Bankia;Transporte;Autobus;3;0;Carcaixent - Hospital Ribera - Carcaixent
+30;5;2016;Bankia;Salario;Hospital Ribera;0;400,75;practicas empresa Ribera Salud UTE II  
+30;5;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent
+27;5;2016;Bankia;Transporte;Tren;5,9;0;Carcaixent  - Valencia - Carcaixent - ida con familia numerosa
+27;5;2016;Bankia;Ocio;Cine;3,5;0;Xmen apocalipsis en los cines Liss
+27;5;2016;Bankia;Ocio;Comida/Cena;22;0;Comida con Vicente en Fosrers
+26;5;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent
+25;5;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent
+24;5;2016;Bankia;Transporte;Autobus;1,5;0;Carcaixent - Hospital Ribera
+24;5;2016;Bankia;Caprichos;GAME;46,95;0;Juego de TotalWar Warhammer
+23;5;2016;Bankia;Transporte;Tren;1,45;0;Renfe Alcira - Carcaixent con descuento de familia númerosa
+23;5;2016;Bankia;Transporte;Autobus;0,7;0;Hospital Alcira - Renfe Alcira
+19;5;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent
+18;5;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent
+17;5;2016;Bankia;Transporte;Autobus;3;0;Carcaixent - Hospital Ribera  - Carcaixent
+13;5;2016;Bankia;Ocio;Comida/Cena;9,2;0;Cena con Vicente
+12;5;2016;Bankia;Transporte;Tren;1,45;0;Alcira - Carcaixent  con descuento dr familia numerosa
+12;5;2016;Bankia;Transporte;Autobus;0,7;0;Hospital Alcira - Renfe Alcira
+11;5;2016;Bankia;Transporte;Tren;5,9;0;Carcaixent - Valencia norte - ida y vuelta Con familia Num
+11;5;2016;Bankia;Transporte;Autobus;0,7;0;Hospital Alcira - Renfe Alcira
+11;5;2016;Bankia;Gastos;Reprografia;0,08;0;Fotocopia del modelo 1 del proyecto
+10;5;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent
+10;5;2016;Bankia;Caprichos;GAME;3;0;Reserva de la precompra del TotalWar Warhammer
+9;5;2016;Bankia;Salario;Pension;0;150;Ingreso mensual
+5;5;2016;Bankia;Transporte;Tren;0,7;0;Hospital Alcira - Renfe Alcira
+5;5;2016;Bankia;Transporte;Autobus;1,45;0;Renfe Alcira - Carcaixent con descuento de familia númerosa
+5;5;2016;Bankia;Gastos;Reprografia;14;0;Imprimir los planos del juego de dragones y mazmorras
+4;5;2016;Bankia;Transporte;Tren;0,7;0;Hospital Alcira - Renfe Alcira
+4;5;2016;Bankia;Transporte;Autobus;1,45;0;Renfe Alcira - Carcaixent con descuento de familia númerosa
+1;6;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent 
+1;6;2016;Bankia;Regalos;Mama;0;93,9;Regalo Cumpleaños de Mama
+1;6;2016;Bankia;Salario;Pension;0;150;Ingreso Mensual
+2;6;2016;Bankia;Transporte;Autobus;1,5;0;Carcaixent - Hospital Ribera 
+3;6;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent 
+6;6;2016;Bankia;Transporte;Autobus;1,5;5;Hospital Ribera - Carcaixent - Se me olvido la cartera
+10;6;2016;Bankia;Compras;Ordenador;1058;550;Regalo del Ordenador portatil 
+13;6;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent 
+14;6;2016;Bankia;Transporte;Autobus;1,5;0;Carcaixent - Hospital Ribera 
+15;6;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent 
+16;6;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent 
+17;6;2016;Bankia;Transporte;Autobus;1,5;0;Carcaixent - Hospital Ribera 
+20;6;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent 
+20;6;2016;Bankia;Gastos;Peluqueria;10;10;Corte de pelo
+20;6;2016;Bankia;Gastos;Reprografia;45;0;Encuadernación de los apuntes del Grado Ingeniería Eléctrica 
+21;6;2016;Bankia;Transporte;Autobus;1,5;0;Carcaixent - Hospital Ribera 
+23;6;2016;Bankia;Transporte;Autobus;1,5;0;Carcaixent - Hospital Ribera 
+24;6;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent 
+24;6;2016;Bankia;Regalos;Sstella;45,3;0;Imprimir Fotos Sstella - Chinchetas y Marco
+25;6;2016;Bankia;Caprichos;Steam;22,28;0;Juegos del ARK y Space Ingeniera 
+27;6;2016;Bankia;Transporte;Autobus;1,5;0;Carcaixent - Hospital Ribera 
+28;6;2016;Bankia;Transporte;Autobus;1,5;0;Hospital Ribera - Carcaixent 
+28;6;2016;Bankia;Gastos;Reprografia;0,2;0;Imprimir Solicitud 
+29;6;2016;Bankia;Transporte;Tren;7,4;0;Ida y Vuelta Carcaixent - ValenciaNort (sin familia numerosa)
+29;6;2016;Bankia;Transporte;Metro;7,2;0;Bonometro 10 Viajes Zona A 
+29;6;2016;Bankia;Ocio;Comida/Cena;5,45;0;Menu Trinket
+29;6;2016;Bankia;Salario;Hospital Ribera;0;343,88;Practicas Empresa - Hospital Riera
+30;6;2016;Bankia;Transporte;Autobus;1,5;0;Carcaixent - Hospital Ribera 
+1;7;2016;Bankia;Salario;Pension;0;150;Ingreso Mensual
+1;7;2016;Bankia;Gastos;Correos;14,56;14,56;Envio de los documentos de la matricula a Bilbao
+1;7;2016;Bankia;Gastos;Farmacia;15;15;Pasta de dientes y Fluor de PERIO AIR
+8;7;2016;Bankia;Ocio;Comida/Cena;17,44;0;Pizas en el Chalet 
+9;7;2016;Bankia;Ocio;Atracciones;21;21;Acualandia 
+11;7;2016;Bankia;Gastos;Comida;27,97;0;Compra semanal
+13;7;2016;Bankia;Ocio;Cine;12,2;0;Entrada Cine: Dos espias y medio - Palomitas y Fanta Cine
+14;7;2016;Bankia;Ocio;Comida/Cena;30,05;40;Cena chinos Alzira 
+15;7;2016;Bankia;Caprichos;Steam;15,74;0;Expansion DLC Bestias
+15;7;2016;Bankia;Ocio;Cine;15,3;0;Entrada Cine : Infierno Azul - Palomitas y Fanta Cine
+29;7;2016;Bankia;Salario;Hospital Ribera;0;336,88;Practicas Empresa - Hospital Riera
+1;8;2016;Bankia;Salario;Pension;0;150;Ingreso Mensual
+18;8;2016;Bankia;Caprichos;Steam;3,5;0;Juego StarWars
+22;8;2016;Bankia;Transporte;Tren;7,4;0;Ida y vuelta Valencia-Alzira
+28;8;2016;Bankia;Transporte;Tren;7,4;0;Ida y vuelta Valencia-Alzira
+30;8;2016;Bankia;Salario;Hospital Ribera;0;343,88;Practicas empresa Ribera Salud UTE II
+1;9;2016;Bankia;Salario;Pension;0;200;Ingreso Mensual
+1;9;2016;Bankia;Gastos;Reprografia;0,4;0,4;fotocopias ducumentos matrículas 
+2;9;2016;Bankia;Transporte;Tren;7,4;0;ida y vuelta Valencia-Alzira
+2;9;2016;Bankia;Transporte;Tren;8;0;targetas de descuento Fam. Num Renfe
+2;9;2016;Bankia;Estudios;UPV ;54,68;0;Tasas de translado expediente
+2;9;2016;Bankia;Caprichos;Steam;8,6;0;DLC TWWH The Grim and The Grave
+3;9;2016;Bankia;Transporte;BlaBla;40,28;0;Valencia-Bilbao
+6;9;2016;Bankia;Transporte;Metro;5;0;Recarga MetroBuss Barik
+7;9;2016;Bankia;Transporte;Metro;64;0;barik Anual Septiembre - Diciembre 
+9;9;2016;Bankia;Gastos;Reprografia;1,5;0;imprimir y fotocopiar documentos UNI
+9;9;2016;Bankia;Compras;Ropa;6,5;0;comprar calcetines 
+9;9;2016;Bankia;Compras;Ropa;27,46;0;pijama calentito 
+13;9;2016;Bankia;Gastos;Reprografia;11;0;Libro de algebra matematicas 
+13;9;2016;Bankia;Gastos;Vivienda;8;0;paraguas de los chinos
+13;9;2016;Bankia;Ocio;Comida/Cena;12;0;Cena Sstella
+15;9;2016;Bankia;Gastos;Reprografia;10;0;Libro matematicas discretas 
+15;9;2016;Bankia;Gastos;Reprografia;13,3;0;libro de sistemas Digitales
+17;9;2016;Bankia;Ocio;Comida/Cena;13;0;Comida Sstella Kevab
+18;9;2016;Bankia;Compras;Ordenador;5,87;0;Raton Gamer para el PC
+20;9;2016;Bankia;Transporte;Autobus;54,72;0;Ida y vuelta Bilbao-Valencia 
+20;9;2016;Bankia;Gastos;Comida;2,8;0;paquete de papas para el viaje
+20;9;2016;Bankia;Transporte;Tren;2,95;0;Vuelta Valencia-Carcaixent
+21;9;2016;Bankia;Estudios;UPV ;93,12;0;solicitud Titulo Ingeniería Eléctrica
+22;9;2016;Bankia;Transporte;Tren;2,95;0;Ida Carcaixent-Valencia
+22;9;2016;Bankia;Gastos;Comida;2,25;0;paquete de papas para el viaje
+23;9;2016;Bankia;Ocio;Comida/Cena;20,75;0;Quedada de clase Informaticos
+23;9;2016;Bankia;Ocio;Discoteca;10;0;Quedada de clase Informaticos
+27;9;2016;Bankia;Gastos;Vivienda;1,5;0;Copia de llave Casa Sstella
+4;10;2016;Bankia;Salario;Pension;0;500;Pension de David
+4;10;2016;Bankia;Gastos;Comida;8,47;0;queso galletas y mantequilla
+7;10;2016;Bankia;Gastos;Vivienda;78;78;3 bultos de 24, 16 y 12 Kg
+8;10;2016;Bankia;Ocio;Comida/Cena;15;0;Cumple Amiga Sstella
+8;10;2016;Bankia;Ocio;Discoteca;10;0;Cumple Amiga Sstella
+11;10;2016;Bankia;Ocio;Comida/Cena;4;0;Fiestas Pueblo Barakaldo
+18;10;2016;Bankia;Ocio;Comida/Cena;6,2;0;Cena con Sstella
+19;10;2016;Bankia;Gastos;Reprografia;0,05;0;Fotocopia practica de Fundamentos
+25;10;2016;Bankia;Gastos;Peluqueria;13;0;Corte y vaciado de pelo
+25;10;2016;Bankia;Ocio;Comida/Cena;5,85;0;Patatas y helado Burguer King
+26;10;2016;Bankia;Ocio;Comida/Cena;10,1;0;pincho moruno y patatas Kebap
+28;10;2016;Bankia;Ocio;Comida/Cena;10,5;0;Menu Hamburguesa completa BarUni y perrito Caliente Cena Halloween
+28;10;2016;Bankia;Caprichos;Steam;15,27;0;Mount and Blade Warband + DLC`s
+1;11;2016;Bankia;Salario;Pension;0;300;Ingreso Mensual
+5;11;2016;Bankia;Ocio;Comida/Cena;5,5;0;Menu Hamburguesa completa BarUni
+10;11;2016;Bankia;Gastos;Farmacia;7,6;0;cepillo de dientes y desodorante 
+11;11;2016;Bankia;Ocio;Comida/Cena;5,5;0;Menu Hamburguesa completa BarUni
+15;11;2016;Bankia;Gastos;Farmacia;13;0;Accesorios varios 
+17;11;2016;Bankia;Ocio;Comida/Cena;4,5;0;Kebap mixto
+18;11;2016;Bankia;Ocio;Comida/Cena;5,5;0;Menu Hamburguesa completa BarUni
+24;11;2016;Bankia;Estudios;EHU;1,62;0;Matricula 
+24;11;2016;Bankia;Ocio;Comida/Cena;5;0;Pedrata Kebap
+25;11;2016;Bankia;Ocio;Comida/Cena;5,5;0;Menu Hamburguesa completa BarUni
+25;11;2016;Bankia;Caprichos;SuperCell;9,99;10;Gemas de la Oferta BlackDay
+27;11;2016;Bankia;Ocio;Comida/Cena;10,5;0;Cena del dia de la caminata
+30;11;2016;Bankia;Caprichos;Steam;15,75;0;DLC TWWH - Elfos Silvanos
+1;12;2016;Bankia;Salario;Pension;0;300;Ingreso Mensual
+1;12;2016;Bankia;Ocio;Comida/Cena;13,9;0;come y veve de dominos pizza
+2;12;2016;Bankia;Ocio;Comida/Cena;3,6;0;Bocata Bikingo BarUni
+5;12;2016;Bankia;Compras;Ropa;45;0;2 polares 1 pijama 1 camisa termica 
+5;12;2016;Bankia;Ocio;Comida/Cena;1;0;Partida futbolín 
+8;12;2016;Bankia;Transporte;Autobus;5;0;Ida vuelta bosque ohma
+9;12;2016;Bankia;Ocio;Comida/Cena;3,3;0;Bocata Haway BarUni
+11;12;2016;Bankia;Transporte;Autobus;68,38;0;Billetaje Bilbao-Valencia ida y vuelta
+17;12;2016;Bankia;Ocio;Comida/Cena;6,5;0;Menu pedrata grande Kebap
+17;12;2016;Bankia;Gastos;Reprografia;3;0;3 Tipex 2 lapices 2H
+23;12;2016;Bankia;Caprichos;Steam;1,99;0;Insurgency
+25;12;2016;Bankia;Regalos;Abuela;0;200;Estrenas abuela AnaMari de navidad
+25;12;2016;Bankia;Regalos;Papa;0;130;Eatrenas Papa de navidad 
+26;12;2016;Bankia;Regalos;Mama;0;100;Estrenas mama de navidad
+27;12;2016;Bankia;Caprichos;Steam;5,54;0;Planetary Aniquilations Titans
+1;1;2017;Bankia;Salario;Pension;0;300;Pension de David
+2;1;2017;Bankia;Regalos;Sstella;12,9;0;Regalo de Navidad de Sstella
+2;1;2017;Bankia;Transporte;Tren;3,7;0;Ida a Carcaixent_Valencia
+2;1;2017;Bankia;Gastos;Farmacia;7,95;0;Frenadol
+2;1;2017;Bankia;Ocio;Comida/Cena;24,28;0;Cena restaurante japones KIOTO
+3;1;2017;Bankia;Transporte;Tren;3,7;0;Ida a Valencia_Carcaixent
+6;1;2017;Bankia;Regalos;Tio Pablo;0;70;Estrenas Tio Pablo de navidad
+10;1;2017;Bankia;Transporte;Metro;10;0;Recarga Barick
+13;1;2017;Bankia;Ocio;Comida/Cena;2;0;Muffing
+19;1;2017;Bankia;Gastos;Farmacia;1;0;tijeras de uñas
+20;1;2017;Bankia;Ocio;Comida/Cena;2;0;2 Perritos calientes con cebolla
+21;1;2017;Bankia;Ocio;Comida/Cena;7;0;Dominos Pizza - come y veve para 2
+25;1;2017;Bankia;Transporte;Metro;10;0;Recarga Barick
+26;1;2017;Bankia;Gastos;Reprografia;10;0;Libro de matematicas algebra
+27;1;2017;Bankia;Ocio;Comida/Cena;3,6;0;Bar Uni
+31;1;2017;Bankia;Transporte;Metro;10;0;Recarga Barick
+31;1;2017;Bankia;Gastos;Reprografia;15,05;0;Libro de...
+31;1;2017;Bankia;Ocio;Comida/Cena;4;0;Bar Uni
+1;2;2017;Bankia;Salario;Pension;0;200;Pension de David
+1;2;2017;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+4;2;2017;Bankia;Gastos;Comida;56,93;0;Compra semanal
+4;2;2017;Bankia;Compras;Muebles;17,7;0;Basurero cesto chinos
+10;2;2017;Bankia;Gastos;Comida;9,83;0;Compra semanal
+11;2;2017;Bankia;Ocio;Comida/Cena;4;0;2 x Cerveza con limon Pozas40
+11;2;2017;Bankia;Gastos;Comida;4,73;0;2 x Pizzas
+11;2;2017;Bankia;Ocio;Comida/Cena;3;0;Moscato
+12;2;2017;Bankia;Gastos;Comida;2;0;Papel higiénico
+14;2;2017;Bankia;Ocio;Comida/Cena;5,2;0;hamburguesa
+16;2;2017;Bankia;Gastos;Comida;10,96;0;Compra semanal
+19;2;2017;Bankia;Ocio;Comida/Cena;4;0;2 x Cerveza con limon billar
+20;2;2017;Bankia;Gastos;Comida;35,18;0;Compra semanal
+23;2;2017;Bankia;Gastos;Comida;12,52;0;Compra semanal
+24;2;2017;Bankia;Estudios;EHU;460,56;0;Tasa matricula
+1;3;2017;Bankia;Salario;Pension;0;200;Pension de David
+1;3;2017;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+2;3;2017;Bankia;Gastos;Comida;1,78;0;Galletas reyenas
+6;3;2017;Bankia;Gastos;Comida;12,76;0;Compra semanal
+10;3;2017;Bankia;Transporte;Metro;10;0;Recarga Barick
+13;3;2017;Bankia;Gastos;Comida;23,28;0;Compra semanal
+13;3;2017;Bankia;Ocio;Concierto;38,2;0;Concierto melendi
+17;3;2017;Bankia;Ocio;Comida/Cena;3,6;0;Bar Uni
+18;3;2017;Bankia;Caprichos;SuperCell;9,99;0;Pack Principiante Clash Royale
+20;3;2017;Bankia;Gastos;Comida;12,62;0;Compra semanal
+28;3;2017;Bankia;Gastos;Comida;17,21;0;Compra semanal
+31;3;2017;Bankia;Ocio;Comida/Cena;3,6;0;Bar Uni
+1;4;2017;Bankia;Salario;Pension;0;200;Pension de David
+1;4;2017;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+1;4;2017;Bankia;Transporte;Autobus;68,38;0;ida y vuelta Bilvao-Valencia por pascuas en BilmanBus
+6;4;2017;Bankia;Gastos;Comida;22,63;0;Compra semanal
+7;4;2017;Bankia;Gastos;Comida;3,8;0;Suministros para el biaje
+15;4;2017;Bankia;Ocio;Comida/Cena;11,75;0;Cena pascuas con Vicent y Bacarra
+16;4;2017;Bankia;Ocio;Comida/Cena;4;0;Cena pascuas con Vicent y Bacarra
+21;4;2017;Bankia;Caprichos;IG;7,46;0;EUIV (80%Rebajas)
+21;4;2017;Bankia;Ocio;Comida/Cena;20;50;Cena Vicente Japones Valencia
+21;4;2017;Bankia;Gastos;Comida;2,5;0;Suministros para el biaje
+28;4;2017;Bankia;Gastos;Comida;20,42;0;Suministros para el biaje
+28;4;2017;Bankia;Transporte;Metro;10;0;Recarga Barick
+28;4;2017;Bankia;Ocio;Bolera;6;0;bolera ballonti
+1;5;2017;Bankia;Salario;Pension;0;200;Pension de David
+1;5;2017;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+2;5;2017;Bankia;Gastos;Reprografia;0,3;0;Goma borrar
+2;5;2017;Bankia;Regalos;Mama;0;50;Regalo Cumple mama
+5;5;2017;Bankia;Gastos;Comida;13,44;0;Compra semanal
+6;5;2017;Bankia;Ocio;Billar;4,5;0;Partidas de villar
+7;5;2017;Bankia;Gastos;Comida;13,44;0;Compra semanal
+11;5;2017;Bankia;Gastos;Comida;12,43;0;Compra semanal
+13;5;2017;Bankia;Ocio;Concierto;3,5;0;Botella de agua
+19;5;2017;Bankia;Gastos;Comida;10,45;0;Compra semanal
+19;5;2017;Bankia;Ocio;Comida/Cena;5,4;0;Merienda 
+22;5;2017;Bankia;Gastos;Comida;19,32;0;Compra semanal
+24;5;2017;Bankia;Gastos;Comida;9,43;0;Compra semanal
+24;5;2017;Bankia;Gastos;Peluqueria;13;0;
+30;5;2017;Bankia;Regalos;Sstella;16;0;Mochila impermeable camara Wish Sstella
+1;6;2017;Bankia;Salario;Pension;0;200;Pension de David
+1;6;2017;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+1;6;2017;Bankia;Transporte;Autobus;34,19;0;ida Valencia por verano BilmanBus
+2;6;2017;Bankia;Transporte;Metro;10;0;Recarga Barick
+13;6;2017;Bankia;Regalos;Sstella;245,1;0;Canon EOS1100 Regalo Sstella 
+14;6;2017;Bankia;Gastos;Comida;15,56;0;Compra semanal
+16;6;2017;Bankia;Transporte;Metro;13;0;Recarga Barick
+19;6;2017;Bankia;Gastos;Comida;5,55;0;Compra semanal
+22;6;2017;Bankia;Caprichos;Steam;27,75;10;Super rebajas Steam 22 juegos 
+23;6;2017;Bankia;Compras;Movil;560,77;560,77;LG g6 de amazon
+25;6;2017;Bankia;Ocio;Comida/Cena;10;10;pizza Quedada con visent
+1;7;2017;Bankia;Salario;Pension;0;200;Pension de David
+1;7;2017;Bankia;Ocio;Comida/Cena;4;0;quedada Vicent y Bacarra
+3;7;2017;Bankia;Caprichos;Steam;7;1;Super rebajas steam StarBounder
+17;7;2017;Bankia;Viajes;Familia;500;500;viaje a palma - Novia de Luis
+20;7;2017;Bankia;Ocio;Comida/Cena;4;4;quedada Vicent
+21;7;2017;Bankia;Caprichos;Steam;6,1;0;WarHammer Vermintide + DLC Dchuluesselschloss
+25;7;2017;Bankia;Estudios;EHU;15,5;15,5;Certificado familia numerosa 
+27;7;2017;Bankia;Ocio;Cine;20;20;Pase mensual CineRibera
+1;8;2017;Bankia;Salario;Pension;0;250;Pension de David
+1;8;2017;Bankia;Ocio;Comida/Cena;10;10;Pizza Carcaixent 
+10;8;2017;Bankia;Transporte;Tren;5,5;0;Quedada Soft combat
+10;8;2017;Bankia;Transporte;Metro;7,5;0;Quedada Soft combat
+10;8;2017;Bankia;Ocio;Comida/Cena;6;0;Quebap Carcaixent 
+11;8;2017;Bankia;Gastos;Deporte;30;0;Material Escudo y lanza Soft Combat
+17;8;2017;Bankia;Ocio;Comida/Cena;15;0;Pans Carcaixent 
+23;8;2017;Bankia;Ocio;Comida/Cena;3;0;menú doble burger king
+17;8;2017;Bankia;Ocio;Comida/Cena;6;0;menú chinos
+30;8;2017;Bankia;Ocio;Comida/Cena;6;0;Burguer nuevo
+31;8;2017;Bankia;Ocio;Comida/Cena;6;0;Pans
+31;8;2017;Bankia;Caprichos;Steam;27,49;0;Pack TotalWar Edition
+1;9;2017;Bankia;Salario;Pension;0;250;Pension de David
+1;9;2017;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+3;9;2017;Bankia;Transporte;Autobus;27,36;0;ida Valencia por verano BilmanBus
+10;9;2017;Bankia;Ocio;Comida/Cena;8,5;0;Pizza dominos
+11;9;2017;Bankia;Gastos;Comida;23,28;0;Mercadona
+12;9;2017;Bankia;Gastos;Comida;13,93;0;Erosky
+31;9;2017;Bankia;Estudios;EHU;282,68;0;Primer plazo Segundo curso Ingeneria informatica
+31;9;2017;Bankia;Gastos;Comida;13,61;0;Mercadona
+27;9;2017;Bankia;Caprichos;Steam;5,99;0;Pack PortRoyale Edition
+1;10;2017;Bankia;Salario;Pension;0;200;Pension de David
+1;10;2017;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+2;10;2017;Bankia;Gastos;Comida;15,58;0;Erosky
+10;10;2017;Bankia;Caprichos;Steam;8,7;0;Civilizations V & DLCs
+10;10;2017;Bankia;Caprichos;Steam;7,99;0;Skyrim & DLCs
+13;10;2017;Bankia;Ocio;Comida/Cena;3,55;0;Bocadillo jamaica BarUni
+14;10;2017;Bankia;Transporte;Metro;10;0;Recarga Barick
+47;10;2017;Bankia;Gastos;Comida;19,19;0;Mercadona
+17;10;2017;Bankia;Gastos;Comida;11,1;0;Erosky
+29;10;2017;Bankia;Caprichos;Steam;0,75;0;Praetorians
+31;10;2017;Bankia;Gastos;Comida;11,85;0;Erosky
+1;11;2017;Bankia;Salario;Pension;0;200;Pension de David
+1;11;2017;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+4;11;2017;Bankia;Caprichos;IG;1,01;0;Galactic Civilizations III
+4;11;2017;Bankia;Caprichos;IG;1,42;0;Stronhold Crusaders II
+9;11;2017;Bankia;Gastos;Comida;22,22;0;Mercadona
+14;11;2017;Bankia;Gastos;Comida;10,57;0;Erosky
+21;11;2017;Bankia;Gastos;Comida;15,39;0;Mercadona
+23;11;2017;Bankia;Gastos;Comida;5;0;Xino - papel bater
+23;11;2017;Bankia;Caprichos;Steam;17,81;0;Age Of Empires Legacy
+23;11;2017;Bankia;Caprichos;G2A;4,16;0;Crusader Kings II
+27;11;2017;Bankia;Ocio;Comida/Cena;14,5;0;Pizza dominos
+1;12;2017;Bankia;Salario;Pension;0;200;Pension de David
+1;12;2017;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+3;12;2017;Bankia;Caprichos;G2A;21,1;0;Crusader Kings II DLCs VIPs
+4;12;2017;Bankia;Caprichos;G2A;13,36;0;Crusader Kings II DLCs Culturas
+5;12;2017;Bankia;Gastos;Comida;18,09;0;Mercadona
+8;12;2017;Bankia;Caprichos;Humble Bumble;30,78;0;Yogscast Jingle Jam 2017!
+8;12;2017;Bankia;Transporte;Autobus;34,19;0;ida Valencia por Navidad BilmanBus
+11;12;2017;Bankia;Caprichos;G2A;12,68;0;CK2 Otros DLCs y SpellForce II
+13;12;2017;Bankia;Gastos;Comida;12,62;0;Mercadona
+17;12;2017;Bankia;Transporte;Metro;10;0;Recarga Barick
+19;12;2017;Bankia;Estudios;EHU;251,57;0;Segundo plazo Segundo curso Ingeneria informatica
+22;12;2017;Bankia;Gastos;Comida;2,55;0;Mercadona
+24;12;2017;Bankia;Gastos;Deporte;7,5;5;Materiales armas soft
+24;12;2017;Bankia;Regalos;Sstella;44,99;0;Viaje aventura Regalo Sstella
+25;12;2017;Bankia;Regalos;Abuela;0;140;Estrenas Abuela
+25;12;2017;Bankia;Regalos;Tio Pablo;0;50;Estrenas Tío pablo
+25;12;2017;Bankia;Regalos;Papa;0;120;Estrenas Papa
+25;12;2017;Bankia;Caprichos;IG;4,91;0;Cities Skylines
+26;12;2017;Bankia;Regalos;Mama;53,32;33,33;Viaje Tour pueblos Regalo Mama
+26;12;2017;Bankia;Gastos;Deporte;2,49;0;Materiales armas soft
+27;12;2017;Bankia;Gastos;Peluqueria;10;10;Corte de pelo 
+27;12;2017;Bankia;Ocio;comida/cena;21;0;Fosters Vicent
+28;12;2017;Bankia;Ocio;comida/cena;12;12;Comida carretera
+28;12;2017;Bankia;Transporte;Autobus;30;30;Vuelta Navidades
+29;12;2017;Bankia;Ocio;comida/cena;25;25;Comida con Lluís y mama
+29;12;2017;Bankia;Caprichos;Humble Bumble;9,41;0;Humble Monthly Especial Navidades
+31;12;2017;Bankia;Ocio;Museo;5;5;Socio museo 
+31;12;2017;Bankia;Regalos;Sstella;20;0;Tira Leds RGB
+31;12;2017;Bankia;Gastos;Deuda ;8;0;Deuda Alex
+31;12;2017;Bankia;Regalos;Mama;0;50;Estrenas Mama
+1;1;2018;Bankia;Salario;Pension;0;250;Pension de David
+1;1;2018;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+4;1;2018;Bankia;Gastos;Comida;14,77;0;Erosky
+15;1;2018;Bankia;Gastos;Comida;14,81;0;Mercadona
+15;1;2018;Bankia;Regalos;Sstella;10,6;0;Bazar
+23;1;2018;Bankia;Caprichos;Humble Bumble;10,18;0;Humble Oferta Paradox
+29;1;2018;Bankia;Gastos;Comida;16,8;0;Mercadona
+1;2;2018;Bankia;Salario;Pension;0;250;Pension de David
+1;2;2018;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+3;2;2018;Bankia;Caprichos;Humble Bumble;10,01;0;Humble Monthly Darck Soulds 3
+8;2;2018;Bankia;Gastos;Comida;17,86;0;Erosky
+11;2;2018;Bankia;Transporte;Metro;10;0;Recarga Barick
+13;2;2018;Bankia;Gastos;Comida;17,89;0;Mercadona
+16;2;2018;Bankia;Caprichos;Steam;2,98;0;Rebajas Steam
+22;2;2018;Bankia;Gastos;Comida;25,35;0;Mercadona
+1;3;2018;Bankia;Salario;Pension;0;200;Pension de David
+1;3;2018;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+1;3;2018;Bankia;Gastos;Reprografia;0,7;0;Apuntes de Sistemas operativos
+2;3;2018;Bankia;Caprichos;G2A;16,68;0;Tempest TwoWords RebelGalaxi Dwelvers GodEater2
+6;3;2018;Bankia;Gastos;Comida;16,2;0;Erosky
+12;3;2018;Bankia;Gastos;Reprografia;0,68;0;Apuntes de Investigación
+12;3;2018;Bankia;Gastos;Comida;24,47;0;Mercadona
+13;3;2018;Bankia;Regalos;Papa;26,8;0;https://www.teezily.com/thank_you?id=O-Q0POR
+20;3;2018;Bankia;Gastos;Comida;21,47;0;Eroski
+25;3;2018;Bankia;Caprichos;G2A;8,91;0;Star Wars Empire y Extras
+26;3;2018;Bankia;Gastos;Comida;11,06;0;Mercadona
+28;3;2018;Bankia;Ocio;Comida/Cena;7,25;0;Comida antes del viaje - Cafeteria Ingenieros
+28;3;2018;Bankia;Transporte;Tren;4;0;Valencia - Carcaixent
+29;3;2018;Bankia;Regalos;Mama;6;0;Cable HDMI
+29;3;2018;Bankia;Gastos;Comida;14,21;0;Mas y Mas
+30;3;2018;Bankia;Ocio;Comida/Cena;7;0;Postre Crep
+31;3;2018;Bankia;Ocio;Comida/Cena;5;0;Pizza Venecia
+1;4;2018;Bankia;Salario;Pension;0;250;Pension de David
+1;4;2018;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+1;4;2018;Bankia;Transporte;Autobus;27,84;0;Valencia - Bilbao BilmanBus
+1;4;2018;Bankia;Transporte;BlaBla;35;0;Bilbao - Valencia
+4;4;2018;Bankia;Gastos;Peluqueria;10;10;Peluqueria
+5;4;2018;Bankia;Salud;Vacuna;300;300;Vacuna menigitis
+6;4;2018;Bankia;Salud;Dentista;60;60;Revisión anual Dentista 
+11;4;2018;Bankia;Caprichos;Humble Bumble;1;0;Endless Space 1 Collection
+12;4;2018;Bankia;Gastos;Comida;18,1;0;Mercadona
+17;4;2018;Bankia;Gastos;Comida;12,27;0;Erosky
+20;4;2018;Bankia;Caprichos;IG;32,13;0;Sstellaris - DLC Utopia - DLC Syntetic Dawn - DLC Apocalipse - DLC Lebiatans
+22;4;2018;Bankia;Transporte;Metro;10;0;Recarga Barick
+26;4;2018;Bankia;Gastos;Comida;19,37;0;Mercadona
+1;5;2018;Bankia;Salario;Pension;0;200;Pension de David
+1;5;2018;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+5;5;2018;Bankia;Regalos;Mama;0;100;Regalo de Mama
+10;5;2018;Bankia;Gastos;Comida;14,49;0;Erosky
+14;5;2018;Bankia;Gastos;Comida;11,5;0;Erosky
+14;5;2018;Bankia;Ocio;Comida/Cena;15,45;0;Montaditos
+20;5;2018;Bankia;Gastos;Comida;15,7;0;Mercadona
+26;5;2018;Bankia;Caprichos;IG;8,99;0;Dead Island Collection
+30;5;2018;Bankia;Gastos;Comida;5,34;0;IBM
+1;6;2018;Bankia;Salario;Pension;0;200;Pension de David
+1;6;2018;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+1;6;2018;Bankia;Caprichos;Steam;10,67;0;Humble de junio con HIIV
+5;6;2018;Bankia;Transporte;Metro;10;0;Recarga Barick
+5;6;2018;Bankia;Compras;Ropa;30;0;Zapatos Deportivas Decatlon 
+11;6;2018;Bankia;Ocio;Comida/Cena;24;0;Cena Viaje Con sstella 
+20;6;2018;Bankia;Transporte;Tren;5;0;Amara DonOsti
+24;6;2018;Bankia;Transporte;Autobus;27,84;0;Bilbao-Valencia en BilmanBus
+29;6;2018;Bankia;Salario;Pension;0;200;Pension de David
+30;6;2018;Bankia;Transporte;BlaBla;35,5;0;Valencia-Malaga
+4;7;2018;Bankia;Gastos;Comida;4,45;0;Mercadona
+4;7;2018;Bankia;Transporte;Tren;2,1;0;Carcaixent - Benifallo
+4;7;2018;Bankia;Compras;Ropa;24,4;24,4;Bañadores
+10;7;2018;Bankia;Gastos;Comida;17,78;0;Comida Sstella
+11;7;2018;Bankia;Gastos;Comida;21;30;Comida Sstella
+12;7;2018;Bankia;Transporte;Tren;5,9;0;Carcaixent - Valencia - Carcaixent
+21;7;2018;Bankia;Transporte;Tren;5,9;0;Carcaixent - Valencia - Carcaixent
+24;7;2018;Bankia;Salud;Vacuna;320;320;Vacuna menigitis
+25;7;2018;Bankia;Ocio;Comida/Cena;0;10;papa se fue y dejo para cenar 
+25;7;2018;Bankia;Ocio;Comida/Cena;50;62;la abuela nos da para las barcas
+2;8;2018;Bankia;Transporte;Tren;7,4;0;Carcaixent - Valencia - Carcaixent
+10;8;2018;Bankia;Transporte;BlaBla;19;0;Valencia-Madrid
+10;8;2018;Bankia;Transporte;Tren;5,9;20;Carcaixent - Valencia - Carcaixent
+11;8;2018;Bankia;Gastos;Deporte;10,65;0;Cinta americana para el escudo Soft Combat
+21;8;2018;Bankia;Gastos;Deporte;20;20;Cinta americana para el escudo Soft Combat
+23;8;2018;Bankia;Transporte;Tren;5,9;0;Carcaixent - Valencia - Carcaixent
+25;8;2018;Bankia;Transporte;Tren;5,9;0;Carcaixent - Valencia - Carcaixent
+25;8;2018;Bankia;Gastos;Peluqueria;10;10;Corte de pelo
+26;8;2018;Bankia;Transporte;Tren;2,95;0;Carcaixent - valencia
+29;8;2018;Bankia;Transporte;BlaBla;18;0;Madrid - Valencia 
+29;8;2018;Bankia;Compras;Movil;4;0;Cargador movil
+30;8;2018;Bankia;Transporte;Tren;2,95;0;Valencia - Carcaixent
+1;9;2018;Bankia;Salario;Pension;0;200;Pension de David
+1;9;2018;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+4;9;2018;Bankia;Transporte;BlaBla;35,5;0;Valencia-Bilbao
+7;9;2018;Bankia;Gastos;Deporte;0,7;0;Cinta americana para el escudo
+8;9;2018;Bankia;Transporte;Tren;5,9;0;Carcaixent - Valencia - Carcaixent
+9;9;2018;Bankia;Transporte;Metro;10;0;Recarga Barik
+11;9;2018;Bankia;Gastos;Comida;15,86;0;Mercadona
+11;9;2018;Bankia;Gastos;Reprografia;0,5;0;fotocopia del empadronamiento en color
+18;9;2018;Bankia;Gastos;Comida;18,29;0;Eroski
+19;9;2018;Bankia;Estudios;EHU;282,68;0;Primer plazo del tercer curso 
+25;9;2018;Bankia;Gastos;Comida;19,21;0;Mercadona
+1;10;2018;Bankia;Salario;Pension;0;200;Pension de David
+1;10;2018;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+2;10;2018;Bankia;Gastos;Comida;18,29;0;Erosky
+5;10;2018;Bankia;Caprichos;G2A;8,72;0;7 days - To the Moon - Dungeon III
+9;10;2018;Bankia;Gastos;Comida;18,12;0;Mercadona
+14;10;2018;Bankia;Transporte;Metro;10;0;Recarga Barik
+16;10;2018;Bankia;Gastos;Comida;17,44;0;Erosky
+23;10;2018;Bankia;Gastos;Comida;18,42;0;Mercadona
+23;10;2018;Bankia;Caprichos;Humble Bumble;0,9;0;Batman - Scribblenauts - Middle Earth
+27;10;2018;Bankia;Ocio;Server;2,5;0;Server 7Days ASSX 
+1;11;2018;Bankia;Salario;Pension;0;200;Pension de David
+1;11;2018;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+2;11;2018;Bankia;Gastos;Comida;17,89;0;Erosky
+6;11;2018;Bankia;Gastos;Comida;17,63;0;Mercadona
+14;11;2018;Bankia;Gastos;Comida;6,52;0;Mercadona
+20;11;2018;Bankia;Gastos;Comida;19,22;0;Mercadona
+1;12;2018;Bankia;Salario;Pension;0;250;Pension de David
+1;12;2018;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+4;12;2018;Bankia;Gastos;Comida;19,43;0;Erosky
+5;12;2018;Bankia;Transporte;Autobus;27,84;0;Valencia - Bilbao en Bilmanbus
+5;12;2018;Bankia;Regalos;Sstella;31,15;0;Tira led Regalo Sstella
+5;12;2018;Bankia;Ocio;Server;2,45;0;Server 7Days ASSX 
+6;12;2018;Bankia;Caprichos;IG;14,41;0;Sstellaris Megacorp DLC
+6;12;2018;Bankia;Caprichos;IG;4,91;0;Sstellaris Distant Stars DLC
+9;12;2018;Bankia;Transporte;Metro;10;0;Recarga Barik
+11;12;2018;Bankia;Gastos;Comida;17,42;0;Mercadona 
+19;12;2018;Bankia;Estudios;EHU;251,57;0;Primer plazo del tercer curso 
+20;12;2018;Bankia;Ocio;Comida/Cena;5;0;Comida Piso Navidad
+21;12;2018;Bankia;Transporte;Tren;3,7;0;Valencia - Carcaixent
+22;12;2018;Bankia;Gastos;Peluqueria;10;10;Corte de pelo
+23;12;2018;Bankia;Regalos;Papa;0;150;Estrenas Papa
+25;12;2018;Bankia;Regalos;Mama;0;150;Estrenas Mama
+25;12;2018;Bankia;Regalos;El Padrino;0;50;Estrenas El Padrino Lluis
+25;12;2018;Bankia;Regalos;Abuela;0;100;Estrenas Abuela
+25;12;2018;Bankia;Regalos;Tio Pablo;0;50;Estrenas El tío Pablo
+1;1;2019;Bankia;Salario;Pension;0;200;Pension de David
+1;1;2019;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+7;1;2019;Bankia;Gastos;Comida;16,51;0;Erosky
+11;1;2019;Bankia;Gastos;Comida;22,98;0;Erosky
+11;1;2019;Bankia;Estudios;Emprende Aprendiendo;26,18;0;Curso de los 30 pasos del emprendedor
+20;1;2019;Bankia;Transporte;Metro;10;0;Recarga Barik
+21;1;2019;Bankia;Gastos;Comida;18,83;0;Erosky
+22;1;2019;Bankia;Gastos;Comida;4,32;0;Erosky
+23;1;2019;Bankia;Ocio;Comida/Cena;3,8;0;Bocadillo Bikingo BarUni
+2;2;2019;Bankia;Salario;Pension;0;200;Pension de David
+2;2;2019;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+5;2;2019;Bankia;Gastos;Comida;22,81;0;Mercadona
+6;2;2019;Bankia;Ocio;Comida/Cena;3,55;0;Bocadillo Jamaika BarUni
+12;2;2019;Bankia;Gastos;Comida;17,03;0;Erosky
+13;2;2019;Bankia;Ocio;Comida/Cena;3,55;0;Bocadillo Jamaika BarUni
+18;2;2019;Bankia;Transporte;Metro;10;0;Recarga Barik
+25;2;2019;Bankia;Gastos;Comida;17,99;0;Mercadona
+28;2;2019;Bankia;Ocio;Comida/Cena;3,55;0;Bocadillo Jamaika BarUni
+1;3;2019;Bankia;Salario;Pension;0;200;Pension de David
+1;3;2019;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+2;3;2019;Bankia;Caprichos;Humble Bumble;8,21;0;Humble Montly Abril
+6;3;2019;Bankia;Gastos;Comida;15,87;0;Erosky
+6;3;2019;Bankia;Viajes;Novia;90;0;Viaje pascuas por convivencia con la familia de amorcito la la la
+20;3;2019;Bankia;Ocio;Comida/Cena;3,55;0;Bocadillo Jamaika BarUni
+20;3;2019;Bankia;Gastos;Comida;18,46;0;Erosky
+25;3;2019;Bankia;Transporte;Metro;10;0;Recarga Barik
+26;3;2019;Bankia;Gastos;Comida;19,18;0;Mercadona
+1;4;2019;Bankia;Salario;Pension;0;200;Pension de David
+1;4;2019;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+2;4;2019;Bankia;Gastos;Comida;19,71;0;Mercadona
+15;4;2019;Bankia;Gastos;Comida;8,4;0;Erosky
+23;4;2019;Bankia;Transporte;Autobus;28,3;0;Valencia - Bilbao BilmanBus
+24;4;2019;Bankia;Gastos;Peluqueria;10;0;Corte de pelo
+24;4;2019;Bankia;Gastos;Comida;0,6;0;Pan
+25;4;2019;Bankia;Gastos;Comida;10,61;0;mas y más
+26;4;2019;Bankia;Ocio;Comida/Cena;10;0;2 menús de chivitos
+27;4;2019;Bankia;Caprichos;Mojang;23,95;0;Minecraft premium
+30;4;2019;Bankia;Gastos;Comida;19,2;0;Mercadona
+1;5;2019;Bankia;Salario;Pension;0;200;Pension de David
+1;5;2019;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+5;5;2019;Bankia;Regalos;El Padrino;0;50;Regalo cumple Lluis
+5;5;2019;Bankia;Regalos;Mama;0;100;Regalo cumple Mama
+9;5;2019;Bankia;Regalos;Sstella;194,14;0;Pack Juegos de mesa
+15;5;2019;Bankia;Transporte;Autobus;70,76;10; Bilbao - Valencia - Bilbao BilmanBus
+21;5;2019;Bankia;Transporte;Tren;4,2;0;Valencia - Carcaixent  Renfe Cercanias
+1;6;2019;Bankia;Salario;Pension;0;200;Pension de David
+5;6;2019;Bankia;Caprichos;Steam;3,23;0;Borderlands 2 Pack con 57 DLCs 
+6;6;2019;Bankia;Vivienda;Alquiler;162,5;162,5;Piso de Alex Ye en Bilbao 
+14;6;2019;Bankia;Transporte;Coche;30;0;Gasolinera Barreiros viaje sstella 
+14;6;2019;Bankia;Facturas;Nuve;19,99;0;Google Drive ONE
+15;6;2019;Bankia;Transporte;Coche;46;0;Gasolinera Carrefour Valle Real 
+18;6;2019;Bankia;Transporte;Autobus;35,38;0;Bilbao - Valencia Bilmanbus
+20;6;2019;Bankia;Transporte;Metro;10;0;Recarga Barik
+25;6;2019;Bankia;Transporte;Tren;4,2;0;Valencia - Carcaixent Renfe Cercanias
+1;7;2019;Bankia;Salario;Pension;0;200;Pension de David
+1;7;2019;Bankia;Transporte;Tren;3,7;0;Carcaixent - Valencia Renfe Cercanias
+1;7;2019;Bankia;Transporte;Metro;7,6;0;Recarga Bonometro
+1;7;2019;Bankia;Ocio;Comida/Cena;1;0;Botella de agua 
+1;7;2019;Bankia;Transporte;Tren;3,7;0;Valencia - Carcaixent Renfe Cercanias
+2;7;2019;Bankia;Transporte;Tren;7,4;0;Carcaixent - Valencia - Carcaixent Renfe Cercanias
+3;7;2019;Bankia;Transporte;Tren;81,15;0;Carcaixent - Valencia Abono Mensual Renfe Cercanias
+6;7;2019;Bankia;Ocio;DreamHack ;15,75;0;Entrada para festival de videojuegos valencia 
+6;7;2019;Bankia;Caprichos;Humble Bumble;9,23;0;Humble Montly Julio KindomCome
+9;7;2019;Bankia;Transporte;Metro;7,6;0;Recarga Bonometro
+17;7;2019;Bankia;Transporte;Metro;7,6;0;Recarga Bonometro
+25;7;2019;Bankia;Transporte;Metro;7,6;0;Recarga Bonometro
+26;7;2019;Bankia;Gastos;Peluqueria;10;10;Corte de pelo
+30;7;2019;Bankia;Salud;Dentista;60;60;Revisión anual Dentista 
+1;8;2019;Bankia;Salario;Pension;0;200;Pension de David
+1;8;2019;Bankia;Salario;Informance;0;622,96;Abono de Nómina Informance 
+5;8;2019;Bankia;Transporte;Tren;81,15;0;Carcaixent - Valencia Abono Mensual deRenfe Cercanias
+5;8;2019;Bankia;Transporte;Metro;7,6;0;Recarga Bonometro
+13;8;2019;Bankia;Transporte;Metro;7,6;0;Recarga Bonometro
+22;8;2019;Bankia;Transporte;Metro;7,6;0;Recarga Bonometro
+30;8;2019;Bankia;Salario;Informance;0;44,81;Finiquito contrato prácticas de Informance 
+31;8;2019;Bankia;Estudios;Udemy;9,49;0;El pequeño curso de la inversión paciente y racional
+31;8;2019;Bankia;Transporte;Autobus;35,38;0; Valencia - Bilbao - Bilmanbus
+1;9;2019;Bankia;Salario;Pension;0;200;Pension de David
+1;9;2019;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+1;9;2019;Bankia;Salario;Informance;0;624,3;Abono de Nómina Informance 
+7;9;2019;Bankia;Gastos;Comida;36,23;0;Erosky
+9;9;2019;Bankia;Gastos;Reprografia;0,27;0;Papeleo del contrato de Indexa Capital
+16;9;2019;Bankia;Ocio;Comida/Cena;3,7;0;Bocadillo Jamaica BarUni
+18;9;2019;Bankia;Estudios;EHU;1219,98;0;Matrícula 4 curso ingeniería informatica 
+18;9;2019;Bankia;Gastos;Comida;17,76;0;Mercadona 
+26;9;2019;Bankia;Gastos;Comida;4,2;0;Erosky
+28;9;2019;Bankia;Salario;Pension;0;200;Pension de David
+28;9;2019;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+29;9;2019;Bankia;Transporte;Metro;10;0;Recarga Barik
+1;10;2019;Bankia;Gastos;Reprografia;0,75;0;Póster para SAD 2
+1;10;2019;Bankia;Ocio;Comida/Cena;3,7;0;Bocadillo Jamaica
+7;10;2019;Bankia;Gastos;Comida;74,12;0;Mercadona 
+7;10;2019;Bankia;Caprichos;LolaMarket;4,9;0;LolaMarket
+11;10;2019;Bankia;Ocio;Comida/Cena;3,7;0;Bocadillo Jamaica
+15;10;2019;Bankia;Gastos;Comida;1,99;0;Ensalada César Mercadona
+22;10;2019;Bankia;Gastos;Comida;1,65;0;Espaguetis Mercadoma
+29;10;2019;Bankia;Gastos;Comida;1,65;0;Espaguetis Mercadoma
+1;11;2019;Bankia;Salario;Pension;0;200;Pension de David
+1;11;2019;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+4;11;2019;Bankia;Transporte;Metro;10;0;Recarga Barik
+8;11;2019;Bankia;Gastos;Comida;95,93;0;Mercadona 
+8;11;2019;Bankia;Caprichos;LolaMarket;4,9;0;LolaMarket
+13;11;2019;Bankia;Transporte;Autobus;70,76;0; Bilbao - Valencia - Bilbao en Bilmanbus
+27;11;2019;Bankia;Caprichos;Steam;9,99;0;Empyrion Galactic Survival 
+1;12;2019;Bankia;Salario;Pension;0;200;Pension de David
+1;12;2019;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+3;12;2019;Bankia;Gastos;Comida;3,4;0;Espaguetis Meracdona
+3;12;2019;Bankia;Caprichos;G2A;7,07;0;Ancestros Legacy y XCOM complete 
+3;12;2019;Bankia;Gastos;Comida;18,66;0;Compra semanal Mercadona
+24;12;2019;Bankia;Transporte;Tren;3,7;0;Valencia - Carcaixent Renfe Cercanias
+24;12;2019;Bankia;Regalos;Mama;0;200;Estrenas Mama
+24;12;2019;Bankia;Regalos;El Padrino;0;100;Estrenas Lluís padrino 
+25;12;2019;Bankia;Regalos;Abuela;0;150;Estrenas Abuela Ana
+25;12;2019;Bankia;Regalos;Papa;0;100;Estrenas Papa
+26;12;2019;Bankia;Gastos;Peluqueria;10;10;Corte de pelo
+1;1;2020;Bankia;Salario;Pension;0;200;Pension de David
+1;1;2020;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+2;1;2020;Bankia;Transporte;Metro;10;0;Recarga Barik
+2;1;2020;Bankia;Gastos;Comida;86,37;0;Mercadona
+7;1;2020;Bankia;Regalos;Tio Pablo;0;50;Estrenas Tio Pablo
+20;1;2020;Bankia;Ocio;Server;1,6;0;Server de minecraft 2020
+2;2;2020;Bankia;Salario;Pension;0;200;Pension de David
+2;2;2020;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+5;2;2020;Bankia;Gastos;Comida;63,96;0;Mercadona 
+5;2;2020;Bankia;Caprichos;LolaMarket;7,1;0;LolaMarket
+14;2;2020;Bankia;Gastos;Comida;52,52;0;Mercadona 
+14;2;2020;Bankia;Ocio;Comida/Cena;10;0;Mercadona 
+24;2;2020;Bankia;Transporte;Metro;10;0;Recarga Barik
+3;3;2020;Bankia;Salario;Pension;0;200;Pension de David
+3;3;2020;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+17;3;2020;Bankia;Caprichos;IG;22,64;0;Stellaris DLCs Federations y Ancient Relics
+22;3;2020;Bankia;Caprichos;LolaMarket;3,9;0;LolaMarket
+22;3;2020;Bankia;Gastos;Comida;52,73;0;LolaMarket
+1;4;2020;Bankia;Salario;Pension;0;200;Pension de David
+1;4;2020;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+22;4;2020;Bankia;Gastos;Comida;95,96;0;LolaMarket - Mercadona
+22;4;2020;Bankia;Caprichos;LolaMarket;5;0;LolaMarket - Mercadona
+22;4;2020;Bankia;Facturas;Luz;20;0;Piso de Alex Ye en Bilbao 
+28;4;2020;Bankia;Caprichos;IG;5,95;0;Stellaris DLC Lilitoids
+1;5;2020;Bankia;Salario;Pension;0;200;Pension de David
+1;5;2020;Bankia;Vivienda;Alquiler;325;325;Piso de Alex Ye en Bilbao 
+1;5;2020;Bankia;Caprichos;Humble Bumble;14,27;0;XCom 2 - Jurasic World - Ryse of Industry
+5;5;2020;Bankia;Regalos;Mama;100;0;Regalo de cumple mama
+30;5;2020;Bankia;Facturas;Nuve;69;0;Suscripción Anual a OneDrive 1T y Oficce
+1;6;2020;Bankia;Salario;Pension;0;200;Pension de David
+4;6;2020;Bankia;Gastos;Peluqueria;8;0;Corte de pelo
+4;6;2020;Bankia;Transporte;Metro;5;0;Recarga Barik
+11;6;2020;Bankia;Transporte;Metro;5;0;Recarga Barik
+12;6;2020;Bankia;Ocio;Comida/Cena;16,67;0;Fiesta Fin de año Piso Alex - Vino y Telepizza
+17;6;2020;Bankia;Transporte;Autobus;35,38;0;Bilbao - Valencia Autobus
+18;6;2020;Bankia;Gastos;Reprografia;0,65;0;Sello e impresión del contrato prácticas 
+12;6;2020;Bankia;Ocio;Comida/Cena;17;0;Fiesta Fin de año Piso Sstella Kebap
+3;7;2020;Bankia;Salario;Pension;0;200;Pension de David
+4;7;2020;Bankia;Caprichos;G2A;2,15;0;Galáctica DeadLoock Battlestart
+6;7;2020;Bankia;Compras;Ropa;28;28;Bañadores Piscina 
+6;7;2020;Bankia;Gastos;Deporte;23;23;Cuota mensual Julio Piscina 
+6;7;2020;Bankia;Gastos;Deporte;13;13;Reloj targeta piscina
+11;7;2020;Bankia;Ocio;Server;2,5;0;Server minecraft con los primos
+19;7;2020;Bankia;Regalos;Alvarito;0,45;0;Minecraft Alvarito Primo
+21;7;2020;Bankia;Regalos;Sstella;200;0;Regalo de cumple de Stella de 2020 su primera inversión 
+31;7;2020;Bankia;Salario;Informance;0;691,51;Abono de Haberes
+4;8;2020;Bankia;Salario;Pension;0;200;Pension de David
+7;8;2020;Bankia;Caprichos;Humble Bumble;14,68;0;Bumble de paradox Battletech e Imperator entre otros
+2;9;2020;Bankia;Salario;Informance;0;691,51;Abono de Haberes
+3;9;2020;Bankia;Salario;Pension;0;200;Pension de David
+9;9;2020;Bankia;Caprichos;Humble Bumble;60,37;0;Crusader Kings III - Royale expansion
+29;9;2020;Bankia;Salario;Informance;0;677,51;Abono de Haberes
+2;10;2020;Bankia;Salario;Pension;0;80;Pension de David
+3;10;2020;Bankia;Regalos;Abuela;0;4,9;Regalo de la Abuela Ana
+17;10;2020;Bankia;Caprichos;Steam;11,59;0;Phasmophobia
+28;10;2020;Bankia;Gastos;Peluqueria;17;17;Corte de pelo
+30;10;2020;Bankia;Salario;Informance;0;677,51;Abono de Haberes
+1;11;2020;Bankia;Salario;Pension;0;80;Pension de David
+4;11;2020;Bankia;Estudios;EHU;31,8;;Matrícula EHU Bilbao 2020-2021
+5;11;2020;Bankia;Compras;Ordenador;150;150;Reparacion PC 
+12;11;2020;Bankia;Caprichos;Steam;29,99;0;Satisfactory
+12;11;2020;Bankia;Regalos;Visent;29,99;0;Satisfactory
+29;11;2020;Bankia;Caprichos;Steam;11,99;0;StarWars Battlefront 2 Celebration
+1;12;2020;Bankia;Salario;Informance;0;448,45;Abono de Haberes
+1;12;2020;Bankia;Salario;Informance;0;150,03;Abono de Haberes
+3;12;2020;Bankia;Salario;Pension;0;80;Pension de David
+20;12;2020;Bankia;Compras;Ropa;25;25;Pantalones
+24;12;2020;Bankia;Regalos;Abuela;0;100;Estrenas abuela AnaMari
+25;12;2020;Bankia;Regalos;Mama;0;200;Estrenas Mama
+25;12;2020;Bankia;Regalos;Tio Pablo;0;50;Estrenas Tio Pablo
+25;12;2020;Bankia;Regalos;Papa;0;200;Estrenas Papa
+25;12;2020;Bankia;Salario;Pension;0;80;Pension de David
+26;12;2020;Bankia;Regalos;El Padrino;0;50;Estrenas Lluis
+29;12;2020;Bankia;Salario;Informance;0;1101;Abono de Haberes
+4;1;2021;Bankia;Caprichos;Steam;3,6;0;Warhammer ChaosBane
+7;1;2021;Bankia;Estudios;EHU;115,14;0;Convalidacion creditos de practicas
+3;2;2021;Bankia;Salario;Pension;0;80;Pension de David
+3;2;2021;Bankia;Salario;Informance;0;653;Abono de Haberes
+26;2;2021;Bankia;Salario;Informance;0;643;Abono de Haberes
+26;2;2021;Bankia;Gastos;Reprografia;3;3;Fotos DNI
+1;3;2021;Bankia;Salario;Pension;0;80;Pension de David
+5;3;2021;Efectivo;Gastos;Reprografia;12;0;Renovacion del DNI
+31;3;2021;Bankia;Salario;Informance;0;643;Abono de Haberes
+31;3;2021;Bankia;Salario;Pension;0;80;Pension de David
+14;4;2021;Bankia;Caprichos;Steam;5.99;0;Stellaris DLC Necroids
+15;4;2021;Bankia;Caprichos;Steam;14.39;0;Stellaris DLC Nemesis
+23;4;2021;Efectivo;Gastos;Peluqueria;10;20;Peluqueria
+30;4;2021;Bankia;Regalos;Mama;10;0;

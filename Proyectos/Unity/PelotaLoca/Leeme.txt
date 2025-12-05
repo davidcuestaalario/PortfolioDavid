@@ -1,0 +1,151 @@
+Este proyecto es un ejemplo de prueba de la librería de Unity ML-Agents en la que se ha entrenado una red neuronal para que una pelota alcance un objetivo en el menor tiempo posible.
+En la escena ejecutable se compara el resultado del mismo entrenamiento (el mejor entrenamiento de todas las configuraciones probadas) en dos escenarios de prueba. 
+- La pelota fue entrenada en el escenario pequeño debido a que el progreso de aprendizaje era considerablemente más rápido
+- Se observa que en el escenario grande no se desenvuelve con la misma soltura
+- Se debería continuar con el entrenamiento en el escenario grande ahora que la pelota conoce su objetivo
+
+Parámetros del aprendizaje: 
+- Recompensa de 1 al topar con el objetivo
+- Penalización de 0.1 al topar con una pared
+
+Configuración de la red neuronal
+behaviors:
+  Pelota:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 64
+      buffer_size: 12000
+      learning_rate: 0.0003
+      beta: 0.001
+      epsilon: 0.2
+      lambd: 0.99
+      num_epoch: 3
+      learning_rate_schedule: linear
+    network_settings:
+      normalize: true
+      hidden_units: 128
+      num_layers: 2
+      vis_encode_type: simple
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+    keep_checkpoints: 5
+    max_steps: 90000000
+    time_horizon: 1000
+    summary_freq: 12000
+
+Explicacion de los parametros
+	// hyperparameters:
+	
+	// * batch_size: Indica cuántos pasos se pueden guardar para producir un update de nuestra red neuronal
+	//   - Rango: Este valor tiene que ser muy diferente si estamos trabajando en un space continuous o discrete
+	//     # continuous: entre 512 a 5120
+	//     # Discrete: entre 32 y 512
+	//   - Funcionamiento:
+	//     # En cada update el agente 
+	//       * Primero observa el entorno 
+	//       * Después decide una acción 
+	//       * Finalmente observa el entorno otra vez teniendo en cuenta nuestros premios o castigos
+	//     # Cada update consiste en 
+	//       * Alimentar la red neuronal con las observaciones
+	//       * Calcular los errores cometidos basandose en los premios o castigos 
+	//       * Ajustar el peso de los perceptrones. 
+	
+	// * buffer_size: Indica cuántas experiencias son necesarias para modificar el modelo. 
+	//   - Rango: entre 2048 y 409600 
+	//   - Limitaciones: Tiene que ser un múltiplo de veces superior al batch_size. 
+	//   - Recomendaciones: 
+	//     #  Un modelo con pocas observaciones se puede permitir un valor menor
+	//     #  Si nos encontramos con una linea de aprendizaje inestable deberemos subirlo
+
+	// * beta: Indica la profundidad de la exploracion al inicio del entrenamiento
+	//   - Rango: entre 0.001 y 100
+	//   - Funcionamiento: 
+	//     # Cuando mas alto sea el valor mas acciones aleatorias tomara el agente al inicio del aprendizaje
+	//     # Durante el proceso del aprendizaje el valor va tendiendo a 0, ya que el sistema cada vez tiene mas información para tomar decisiones
+	//   - Recomendaciones:
+	//     #  Un modelo con pocas acciones disponibles se puede permitir un valor menor
+	//     #  Un valor demasiado elevado alargara inecesariamente el proceso de aprendizaje	
+	//     #  Un valor demasiado reducido no permitira al agente aprender
+
+	// * lambd: Indica la fiabilidad de los estados de memoria
+	//   - Rango: entre 0 y 1
+	//   - Funcionamiento:
+	//     # El valor de los estados de memoria se recalculan cada vez que alcanaz una recompensa
+	//     # Un valor cercano a 0 otorgara mas importancia a las recompensas pasadas
+	//     # Un valor cercano a 1 otorgara mas importancia a las recompensas inmediatas
+
+	// * num_epoch:
+	//   - Rango: entre 3 y 8
+	//   - Funcionamiento:
+	//     # Cuando mas grande es el valor mas estable el aprendizaje
+	//     # Cuando mas pequeño es el valor mas rapido es el aprendizaje	
+
+	// * learning_rate: Indica la frecuencia con la que se ajustan los pesos de la red neuronal
+	//   - Rango: entre 0.1 y 0.0001
+	//   - Funcionamiento:
+	//     # Un valor mayor proboca que el modelo se actualice con mas frecuencia
+	//     # aumentar este valor proboca un entrenamiento mas rapido pero mas inestable
+	//   - Recomendaciones:
+	//     # Una actualizacion demasiado frecuente puede por validas anomalias del sistema
+	//     # Una actualizacion demasiado frecuente puede puede perder información de los estados de memoria mas antiguos
+	//     # Una actualizacion poco frecuente realentiza el aprendizaje
+	//     # Es mejor que tenga una frecuencia rapida pero continua en el tiempo.
+	//     # si vemos que nuestro aprendizaje no es estable y el reward no sube de una forma continua deberiamos reducirlo 
+	
+	// * learning_rate_schedule: Indica la tendencia de evolucion del learning_rate
+	//   - Rango: constant o linear
+	//   - Funcionamiento:
+	//     # En funcion del entorno puede ser interesante que la red neuronal se actualice mucho al principio y que se vaya actualizando menos cada vez  
+	//       (empezar con un learning_rate alto y reducirlo rapido con un schedule linear) 
+	//   - Recomendaciones:
+	//     # Es mejor escoger constant en caso de que tengamos un entorno que varia mucho
+	//     # Es mejor escoger linear si el entorno no varia 
+	
+		
+	// * epsilon: Indica el porcentaje que puede cambiar la politica en cada update
+	//   - Rango: entre 0.1 y 0.3
+	//   - Funcionamiento:
+	//     # El valor va decrementando en el tiempo hasta 0.1 (que significa un 10%)
+	//   - Recomendaciones:
+	//     # En casi todos los sitios se recomienda un valor de 0.2
+
+
+	// network_settings:
+
+	// * normalize: Indica si se debe aplicar la normalización al vector de observaciones
+	//   - Rango: True o False
+	//   - Recomendaciones: 
+	//     # En sistemas complejos puede ser beneficioso utilizar estados continuos
+	//     # En sistemas simples que utilizen estados discretos es contraproducente 
+	
+	// * num_layers: Indica el número de capas ocultas de la red neuronal
+	//   - Rango: entre 1 y 3
+	//   - Funcionamiento:
+	//     # El numero de capas limita la complejidad de la red neuronal
+	//   - Recomendaciones:
+	//     # demasiadas capas produciran peores resultados para problemas simples
+	//     # pocas capas podrian no ser capaces de resolver problemas complejos
+	
+	// * hidden_units: Representa el número de unidades que tiene cada una de las capas ocultas
+	//   - Rango: entre 32 y 512	
+	//   - Funcionamiento:
+	//     # su valor esta muy relacionado con el numero de acciones que puede realizar el agente
+	//   - Recomendaciones:
+	//     # aumentar cuando mas acciones pueda realizar el agente 
+	// 	   # aumentar cuando mas complejas sean las acciones que puede realizar el agente
+	
+	// * max_steps: Indica el número máximo de pasos que da el agente antes de finalizar el proceso de aprendizaje
+	//   - Rango: entre 500K y 10M
+	//   - Funcionamiento:
+	//     # Un paso es todo un ciclo completo de observación->acción->observación
+	
+	// * time_horizon: Indica cuántos pasos tiene que dar un agente antes de que estos se incorporen a la experiencia del sistema
+	//   - Rango: entre	32 y 2048
+	//   - Recomendaciones:
+	//     # Se puede reducir en el caso de que un agente reciba muchos premios o castigos para que estos pasen cuanto antes a la memoria
+	
+	// * summary_freq: Indica cuántos pasos tiene que dar un agente antes de que e actualicen los datos en TensorBoard
+	//   - Funcionamiento:
+	//     # no tiene ningun efecto sobre el entrenamiento del modelo

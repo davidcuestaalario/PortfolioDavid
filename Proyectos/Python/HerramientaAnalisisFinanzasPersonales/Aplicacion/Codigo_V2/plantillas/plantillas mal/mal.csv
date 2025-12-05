@@ -1,0 +1,15 @@
+Dia ; Mes ; Ano ;Origen;Destino; Precio;Descripcion
+1;1;2016;Efectivo;Bankia;6.485,00 €;Calculo del dinero Inicial
+18;9;2019;Bankia;Indexa Capital;1.000,00 €;Apertura de cuenta Indexada  / Inversis Banco
+21;3;2019;Bankia;ClickTrade;0,01 €;Confirmación de cuenta bancaria
+19;2;2019;Bankia;DeGiro;0,01 €;Confirmación de cuenta bancaria
+28;6;2020;Bankia;ClickTrade;550,00 €;Compra Inditex
+2;1;2020;Bankia;Indexa Capital;750,00 €;Estrenas Navidad
+17;3;2020;Bankia;DeGiro;400,00 €;Aprovechar rebajas y probar Degiro
+18;11;2020;Bankia;MyInvestor;2.000,00 €;Colchon Parte 1
+24;12;2020;Bankia;MyInvestor;5.000,00 €;Colchon Parte 2
+29;12;2020;Bankia;MyInvestor;3.000,00 €;Colchon Parte 3
+3;2;2021;Bankia;Indexa Capital;890,00 €;Aportacion a Indexa
+27;2;2021;Bankia;Indexa Capital;700,00 €;Aportación Septiembre 
+1;4;2021;Bankia;ClickTrade;800,00 €;Compra Apple
+29;5;2021;Bankia;Indexa Capital;1.000,00 €;Aportacion a Indexa

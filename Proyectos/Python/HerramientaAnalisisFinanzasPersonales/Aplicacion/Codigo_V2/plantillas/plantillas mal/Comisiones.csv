@@ -1,0 +1,13 @@
+Dia ; Mes ; Ano ;Cuenta;Tipo; ISIN ;Gasto;Ingreso;Descripcion
+2016;6;2016;Bankia;Interes;*;0;0,45;Fecha no existe
+18;2016;2016;Bankia;Comision;*;8,4;0;Fecha no existe
+26;6;2016;AAA;Interes;*;0;1,37;Cuenta no existe
+13;7;2016;Bankia;interes;*;0;0,45;interes no existe
+12;8;2016;Bankia;Comision;*;0,13;0;Deberia colar
+12;8;2016;Bankia;Comision;*;0,13;0;Operación Repetida
+4;10;2016;Bankia;comision;*;25,98;0;comision no existe
+26;12;2016;Bankia;aaa;*;0;1,2;tipo incorrecto
+24;6;2018;Bankia;Comision;*;8.4;0;Deberia colar
+4;10;2019;Indexa Capital;Comision;*;0,04;5.3;Deberia colar
+29;6;2020;ClickTrade;Comision;ITX;2_5;0;Real incorrecto
+2;11;2020;ClickTrade;Dividendo;ITX;0;2*9;Real incorrecto

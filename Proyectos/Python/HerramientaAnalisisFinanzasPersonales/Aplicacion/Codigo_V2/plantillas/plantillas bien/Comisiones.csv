@@ -1,0 +1,36 @@
+Dia ; Mes ; Ano ;Cuenta;Tipo; ISIN ;Gasto;Ingreso;Descripcion
+13;6;2016;Bankia;Interes;*;0;5;Abono de Intereses
+18;6;2016;Bankia;Comision;*;10;0;Cargos de cuota targeta 
+26;6;2016;Bankia;Interes;*;0;5;Abono de Intereses
+13;7;2016;Bankia;Interes;*;0;5;Abono de Intereses
+12;8;2016;Bankia;Comision;*;5;0;Abono de Intereses
+20;9;2016;Bankia;Comision;*;5;0;Abono de Intereses
+4;10;2016;Bankia;Comision;*;50;0;??????
+26;12;2016;Bankia;Interes;*;0;1,2;Abono de Intereses
+24;6;2018;Bankia;Comision;*;10;0;Cargos de cuota targeta 
+4;10;2019;Indexa Capital;Comision;*;2;0;
+29;6;2020;ClickTrade;Comision;*;15;0;Compra de acciones
+2;11;2020;ClickTrade;Dividendo;*;0;7,7;
+2;11;2020;ClickTrade;Impuesto;*;20;0;
+8;1;2020;Indexa Capital;Comision;*;15;0;
+3;4;2020;Indexa Capital;Comision;*;5;0;
+3;7;2020;Indexa Capital;Comision;*;5;0;
+8;7;2020;Indexa Capital;Compensacion;*;0;5;
+5;10;2020;Indexa Capital;Comision;*;5;0;
+4;12;2020;MyInvestor;Interes;*;0;10;Liquidacion de Intereses
+17;6;2020;Bankia;Comision;*;10;0;Cargos de cuota targeta 
+7;8;2020;Bankia;Comision;*;5;0;Cargo de Servicios
+7;1;2021;Indexa Capital;Comision;*;10;0;
+4;1;2021;MyInvestor;Impuesto;*;5;0;Liquidacion de Intereses
+4;1;2021;MyInvestor;Interes;*;0;5;Liquidacion de Intereses
+4;2;2021;MyInvestor;Impuesto;*;5;0;Liquidacion de Intereses
+4;2;2021;MyInvestor;Interes;*;0;10;Liquidacion de Intereses
+4;3;2021;MyInvestor;Interes;*;0;10;Liquidacion de Intereses
+4;3;2021;MyInvestor;Impuesto;*;5;0;Liquidacion de Intereses
+3;4;2021;MyInvestor;Interes;*;0;15;Liquidacion de Intereses
+3;4;2021;MyInvestor;Impuesto;*;5;0;Liquidacion de Intereses
+6;4;2021;ClickTrade;Comision;*;15;0;Compra de acciones
+4;5;2021;MyInvestor;Interes;*;0;10;Liquidacion de Intereses
+4;5;2021;MyInvestor;Impuesto;*;5;0;Liquidacion de Intereses
+4;6;2021;MyInvestor;Interes;*;0;5;Liquidacion de Intereses
+4;6;2021;MyInvestor;Impuesto;*;10;0;Liquidacion de Intereses

@@ -1,0 +1,65 @@
+{
+    "Pelota": {
+        "checkpoints": [
+            {
+                "steps": 3499200,
+                "file_path": "results\\pelota06\\Pelota\\Pelota-3499200.onnx",
+                "reward": -0.8666666721304258,
+                "creation_time": 1663355738.0610468,
+                "auxillary_file_paths": [
+                    "results\\pelota06\\Pelota\\Pelota-3499200.pt"
+                ]
+            },
+            {
+                "steps": 3999200,
+                "file_path": "results\\pelota06\\Pelota\\Pelota-3999200.onnx",
+                "reward": -0.5142857347215924,
+                "creation_time": 1663356712.5232353,
+                "auxillary_file_paths": [
+                    "results\\pelota06\\Pelota\\Pelota-3999200.pt"
+                ]
+            },
+            {
+                "steps": 4499200,
+                "file_path": "results\\pelota06\\Pelota\\Pelota-4499200.onnx",
+                "reward": -0.7875000163912773,
+                "creation_time": 1663357690.7342427,
+                "auxillary_file_paths": [
+                    "results\\pelota06\\Pelota\\Pelota-4499200.pt"
+                ]
+            },
+            {
+                "steps": 4999200,
+                "file_path": "results\\pelota06\\Pelota\\Pelota-4999200.onnx",
+                "reward": -0.6888889140552945,
+                "creation_time": 1663358659.8601677,
+                "auxillary_file_paths": [
+                    "results\\pelota06\\Pelota\\Pelota-4999200.pt"
+                ]
+            },
+            {
+                "steps": 5132800,
+                "file_path": "results\\pelota06\\Pelota\\Pelota-5132800.onnx",
+                "reward": null,
+                "creation_time": 1663358981.0646532,
+                "auxillary_file_paths": [
+                    "results\\pelota06\\Pelota\\Pelota-5132800.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5132800,
+            "file_path": "results\\pelota06\\Pelota.onnx",
+            "reward": null,
+            "creation_time": 1663358981.0646532,
+            "auxillary_file_paths": [
+                "results\\pelota06\\Pelota\\Pelota-5132800.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.12.1"
+    }
+}

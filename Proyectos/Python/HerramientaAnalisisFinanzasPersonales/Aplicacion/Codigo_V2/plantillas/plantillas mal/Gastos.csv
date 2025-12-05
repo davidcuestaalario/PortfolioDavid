@@ -1,0 +1,10 @@
+Dia;Mes;Año;Cuenta;Clasificacion;Asunto;Gasto;Ingreso;Descripcion
+2016;4;2016;Bankia;Transporte;Autobus;0,7;0;Fecha incorrecta
+29;2016;2016;Bankia;Transporte;Tren;1,8;0;Fecha incorrecta
+27;4;2016;aaaa;Transporte;Tren;7,5;0;Cuenta no existe
+26;4;2016;Bankia;aaaa;Autobus;1,5;0;Clasificacion no existe
+25;4;2016;Bankia;Transporte;aaaa;1,5;0;Asunto no existe
+1;4;2016;Bankia;Transporte;Tren;3.7;0;Deberia colar
+2;4;2016;Bankia;Ocio;Comida/Cena;9,5;5.3;Deberia colar
+3;4;2016;Bankia;Transporte;Tren;3,7;3_8;Real incorrecto
+4;4;2016;Bankia;Transporte;Tren;7*5;0;Real incorrecto

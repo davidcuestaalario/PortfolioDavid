@@ -1,0 +1,47 @@
+{
+    "Pelota": {
+        "checkpoints": [
+            {
+                "steps": 499200,
+                "file_path": "results\\pelota04\\Pelota\\Pelota-499200.onnx",
+                "reward": null,
+                "creation_time": 1663335583.5100222,
+                "auxillary_file_paths": [
+                    "results\\pelota04\\Pelota\\Pelota-499200.pt"
+                ]
+            },
+            {
+                "steps": 999200,
+                "file_path": "results\\pelota04\\Pelota\\Pelota-999200.onnx",
+                "reward": 0.6460000276565552,
+                "creation_time": 1663336511.9487305,
+                "auxillary_file_paths": [
+                    "results\\pelota04\\Pelota\\Pelota-999200.pt"
+                ]
+            },
+            {
+                "steps": 1497600,
+                "file_path": "results\\pelota04\\Pelota\\Pelota-1497600.onnx",
+                "reward": null,
+                "creation_time": 1663337474.3375614,
+                "auxillary_file_paths": [
+                    "results\\pelota04\\Pelota\\Pelota-1497600.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1497600,
+            "file_path": "results\\pelota04\\Pelota.onnx",
+            "reward": null,
+            "creation_time": 1663337474.3375614,
+            "auxillary_file_paths": [
+                "results\\pelota04\\Pelota\\Pelota-1497600.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.12.1"
+    }
+}

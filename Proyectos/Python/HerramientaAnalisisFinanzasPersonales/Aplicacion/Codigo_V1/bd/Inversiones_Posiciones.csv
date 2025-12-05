@@ -1,0 +1,12 @@
+Dia ; Mes ; Ano ; ISIN ; Titulos ; Precio ; Broker ; Operacion
+25;9;2019;IE00B03HD191;22.68;26.62;Indexa Capital;compra
+7;1;2020;IE00B03HD191;15.28;28.47;Indexa Capital;compra
+3;6;2020;IE00B03HD191;37.96;26.90;Indexa Capital;venta
+3;6;2020;IE00BFPM9N11;5.37;190.08;Indexa Capital;compra
+24;9;2019;IE00B18GC888;3.57;107.97;Indexa Capital;compra
+6;1;2020;IE00B18GC888;2.87;107.24;Indexa Capital;compra
+3;6;2020;IE00B18GC888;6.44;109.25;Indexa Capital;venta
+3;6;2020;IE00BGCZ0B53;5.99;117.33;Indexa Capital;compra
+17;3;2020;IE00B4L5Y983;9;41;DeGiro;compra
+29;6;2020;ITX;22;23.91;ClickTrade;compra
+5;2;2021;IE00BGCZ0B53;3.11;118,9166;Indexa Capital;compra

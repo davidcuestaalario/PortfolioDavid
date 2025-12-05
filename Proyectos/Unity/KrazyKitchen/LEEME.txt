@@ -1,0 +1,5 @@
+Se trata del ejecutable de un proyecto de practicas, Similar al OVERCOOKED
+El proyecto se ha realizado siguiendo los tutoriales del CodeMonkey:
+https://unitycodemonkey.com/kitchenchaoscourse.php
+
+La version multijugador integra la nueva herramienta de Unity NetCode for Network Objects

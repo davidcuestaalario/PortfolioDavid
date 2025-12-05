@@ -1,0 +1,16 @@
+Este proyecto consiste en el juego clásico del Arkanoid. 
+
+Este proyecto incluye:
+- Música para el menú y para el juego
+- Varios niveles con dificultad progresiva
+- Recompensas al destruir bloques
+  o Incrementar la velocidad de la pala
+  o Duplicar el número de pelotas
+- Efectos de partículas al destruir Bloques
+- Efectos de sonido para las pelotas al rebotar y ser destruidas
+- Un menú al que se puede acceder sin perder el progreso
+
+Controles
+- AD para mover la pala
+- Espacio para soltar la bola inicial
+- Escape para volver al menú principal

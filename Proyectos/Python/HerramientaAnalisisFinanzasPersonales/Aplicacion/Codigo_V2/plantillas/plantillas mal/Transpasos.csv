@@ -1,0 +1,8 @@
+Dia ; Mes ; Ano ;Origen;Destino; Precio;Descripcion
+2016;1;2016;Efectivo;Bankia;6.485,00;Fecha incorrecta
+18;20;2019;Bankia;Indexa Capital;1.000,00;Fecha incorrecta
+21;3;2019;aaa;ClickTrade;0,01;Origen incorrecto
+19;2;2019;Bankia;aaa;0,01;Destino incorrecto
+28;6;2020;Bankia;ClickTrade;55_1;Real incorrecto
+2;1;2020;Bankia;Indexa Capital;750;Deberia colar
+2;1;2020;Bankia;Indexa Capital;751;Operación duplicada

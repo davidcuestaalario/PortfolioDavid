@@ -1,0 +1,43 @@
+// Colección de pruebas ejecutadas en postman
+https://devilvilmuyvil-2468592.postman.co/workspace/Devilvil-MuyVil's-Workspace~e6340012-95d5-405c-8663-7f06414c2ff7/collection/50603700-8a043bde-deb7-447d-a4eb-ec43176a6e04?action=share&source=copy-link&creator=50603700
+
+// Obtener el tokken de sesion
+http://localhost:8080/api/sessions/login
+{
+    "username": "admin",
+    "password": "admin123"
+}
+// Listado de sesiones
+http://localhost:8080/api/sessions
+// Cerrar una sesion
+http://localhost:8080/api/sessions/logout?token=PEGA_AQUI_EL_TOKEN
+// Cerrar todas las sesiones
+http://localhost:8080/api/sessions/logout-all?userId=1
+
+
+// Busqueda de usuarios generica
+http://localhost:8080/api/users
+// Busqueda de usuarios por rol
+http://localhost:8080/api/users?role=ADMIN
+// Busqueda de usuarios por nombre
+http://localhost:8080/api/users?username=usu
+// Busqueda de usuarios por nombre y rol
+http://localhost:8080/api/users?username=ad&role=ADMIN
+
+// Crear un nuevo usuario
+http://localhost:8080/api/users
+{
+    "username": "nuevoUsuario",
+    "password": "Seguro123",
+    "role": "USER",
+    "blocked": false
+}
+// Editar un usuario
+http://localhost:8080/api/users/6
+{
+    "username": "nuevoUsuarioEditado",
+    "password": "passwordSeguro123",
+    "role": "ADMIN",
+    "blocked": false
+}
+
