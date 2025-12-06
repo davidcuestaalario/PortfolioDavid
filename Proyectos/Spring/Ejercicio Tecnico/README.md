@@ -1,154 +1,128 @@
 # Ejercicio Técnico - vBote API
 
-API RESTful desarrollada con Spring Boot para la gestión de usuarios y sesiones activas. Este proyecto implementa persistencia de datos, seguridad basada en tokens y filtros de auditoría.
+API RESTful desarrollada con Spring Boot para la gestión de usuarios y sesiones activas. Este proyecto ha sido diseñado priorizando la calidad del código, la seguridad y la escalabilidad, cumpliendo con todos los requerimientos funcionales y técnicos propuestos.
 
 ## 🚀 Tecnologías Utilizadas
 
-* **Java 17**: Lenguaje principal (Requisito Java 8+).
+* **Java 17**: Lenguaje principal (LTS).
 * **Spring Boot 3**: Framework para el desarrollo ágil de la API.
 * **Spring Data JPA (Hibernate)**: Para la persistencia y ORM.
-* **H2 Database**: Base de datos en memoria para desarrollo y pruebas.
+* **H2 Database**: Base de datos en memoria para desarrollo y pruebas rápidas.
 * **Lombok**: Para reducir el código repetitivo (Boilerplate) y mejorar la legibilidad.
 * **Gradle**: Gestor de dependencias y automatización de construcción.
-* **Mockito**: Simulador de componentes para las pruebas unitarias
+* **JUnit 5 & Mockito**: Stack de pruebas unitarias.
+* **Docker**: Contenerización de la aplicación y base de datos.
 
-## 🛠️ Decisiones de Diseño
+---
 
-Para garantizar la calidad del código, escalabilidad y mantenimiento, se ha optado por una **Arquitectura en Capas**:
+## 🛠️ Arquitectura y Decisiones de Diseño
 
-1.  **Modelo de Dominio (Entity)**: Clases `User` y `Session` que reflejan fielmente las tablas de base de datos.
-2.  **DTOs (Data Transfer Objects)**: Se han separado los objetos de transferencia (`UserRequestDTO`, `UserResponseDTO`) de las entidades para:
-    * Ocultar datos sensibles (como passwords y IDs internos).
-    * Desacoplar la API de la estructura de base de datos.
-3.  **Mappers**: Componentes dedicados a la transformación Entidad <-> DTO.
-4.  **Servicios**: Capa transaccional (`@Transactional`) donde reside toda la lógica de negocio.
-5.  **Controladores**: Capa REST encargada solo de recibir peticiones y devolver respuestas HTTP adecuadas.
+Se ha implementado una **Arquitectura en Capas** estricta para garantizar la separación de responsabilidades:
 
-### Seguridad y Requerimientos Técnicos
-* **Filtros (Filters)**: Se han implementado filtros nativos (`OncePerRequestFilter`) en lugar de interceptores para cumplir con los requisitos técnicos:
-    * `RequestLogFilter`: Auditoría de cada petición (Timestamp, Método, Endpoint).
-    * `AuthenticationFilter`: Validación de seguridad. Intercepta las peticiones y verifica la validez del token `Bearer` contra la base de datos.
-* **Base de Datos Volátil**: Se utiliza H2 con un script `data.sql` que precarga usuarios de prueba al iniciar la aplicación.
+1.  **Controladores (REST Layer)**: Manejan las peticiones HTTP y respuestas. No contienen lógica de negocio.
+2.  **DTOs (Data Transfer Objects)**: Desacoplan la API del modelo de base de datos, ocultando datos sensibles (passwords) y permitiendo contratos de API limpios.
+3.  **Mappers**: Componentes dedicados a la transformación bidireccional `Entidad <-> DTO`.
+4.  **Servicios (Business Layer)**: Contienen toda la lógica de negocio y gestión de transacciones (`@Transactional`).
+5.  **Repositorios (Data Access)**: Interfaces de Spring Data JPA para la persistencia.
 
-### Calidad y Testing
-Se han incluido pruebas unitarias utilizando **JUnit 5** y **Mockito** para garantizar la robustez del código.
+### 🛡️ Seguridad y Filtros (Requerimientos Técnicos)
+Se han implementado filtros nativos (`OncePerRequestFilter`) para gestionar la seguridad y auditoría sin depender de frameworks externos pesados:
 
-* **Estrategia**: Tests aislados (Unit Tests) enfocados en la capa de Servicios (`@Service`), simulando repositorios y mappers.
-* **Cobertura**: 
-    * Se ha alcanzado una cobertura superior al **90%** en la lógica de negocio de usuarios (`UserService`), verificando tanto el "Happy Path" como los casos de error (Branch Coverage).
-    * Verificación de llamadas internas mediante `Mockito.verify()` para asegurar la integridad de los datos.
-* **Herramientas**: EclEmma para análisis de cobertura.
+* **AuthenticationFilter**: Intercepta endpoints protegidos y valida el token `Bearer` contra la base de datos y el estado de la sesión activa.
+* **RequestLogFilter**: Auditoría de cada petición entrante (Timestamp, Método, Endpoint) y su tiempo de ejecución.
+* **RateLimitFilter (Punto Extra)**: Protección contra ataques de denegación de servicio (DoS) limitando a **10 peticiones por minuto por IP** utilizando almacenamiento en memoria (`ConcurrentHashMap`).
+
+---
+
+## 📊 Calidad y Testing
+
+Se ha priorizado la robustez del código mediante una estrategia de pruebas unitarias sólidas.
+
+* **Herramientas**: JUnit 5, Mockito y EclEmma.
+* **Cobertura de Código**:
+    * **Servicios Core (`UserService`, `SessionService`)**: **>90%** de cobertura, verificando "Happy Paths", casos de error y cobertura de ramas (Branch Coverage).
+    * **Cobertura Global**: **~70%** del proyecto.
+* **Estrategia**: Tests aislados que simulan (Mock) las dependencias de repositorio y mappers para verificar puramente la lógica de negocio.
+
+---
 
 ## ⚙️ Configuración y Ejecución
 
 ### Prerrequisitos
-* JDK 17 instalado.
-* Maven (o usar el wrapper incluido `mvnw`).
+* Java JDK 17 instalado.
+* Gradle (o usar el wrapper incluido `./gradlew`).
 
-### Pasos para correr el proyecto
+### Opción A: Ejecución Local (H2)
 
-1.  **Clonar/Descargar** el repositorio.
-2.  **Compilar y Ejecutar**:
-    Desde la raíz del proyecto, ejecutar:
-	* En Windows:
+1.  **Clonar** el repositorio.
+2.  **Ejecutar** desde la terminal en la raíz del proyecto:
+    * **Windows**:
         ```bash
         ./gradlew bootRun
         ```
-    * En Linux/Mac:
+    * **Linux/Mac**:
         ```bash
         ./gradlew bootRun
         ```
-    O importar como proyecto Maven en **Spring Tool Suite (STS)** / Eclipse y ejecutar como *Spring Boot App*.
+3.  **Acceso**: La API estará disponible en `http://localhost:8080`.
 
-3.  **Acceso**: La API arrancará en `http://localhost:8080`.
+### Opción B: Despliegue con Docker (Punto Extra)
 
-### Dockerización
+El proyecto incluye configuración para desplegar la API conectada automáticamente a una base de datos **PostgreSQL**.
 
-El proyecto incluye configuración para desplegar la API junto con una base de datos PostgreSQL contenerizada.
+* **Dockerfile**: Imagen basada en OpenJDK 17 Alpine.
+* **docker-compose.yml**: Orquestación de servicios (`app` + `db`).
 
-**Archivos incluidos**
-* **Dockerfile**: Empaqueta la aplicación Spring Boot en una imagen OpenJDK 17 Alpine.
-* **docker-compose.yml**: Orquesta dos servicios:
-    1. `app`: La API REST (Puerto 8080).
-    2. `db`: Base de datos PostgreSQL 15 (Puerto 5432).
+**Pasos para desplegar:**
 
-**Comandos de despliegue**
+1.  Generar el artefacto JAR:
+    ```bash
+    ./gradlew bootJar
+    ```
+2.  Construir y levantar los contenedores:
+    ```bash
+    docker-compose up --build
+    ```
 
-* Generar el artefacto JAR:
-   ```bash
-   ./gradlew bootJar
-   
-   
-   
-   
-   
-      
+---
+
 ## 📚 Documentación de la API
 
-### Autenticación
-Para acceder a los endpoints protegidos, primero debe obtener un token.
-
+### 1. Autenticación (Público)
 * **Login**: `POST /api/sessions/login`
     * Body: `{ "username": "admin", "password": "admin123" }`
-    * Retorna: `{ "token": "uuid-token-...", ... }`
+    * Retorna: `{ "token": "uuid-token...", ... }`
 
-### Usuarios (Requiere Header: `Authorization: Bearer <TOKEN>`)
+### 2. Operaciones de Usuarios
+🔒 *Requiere Header:* `Authorization: Bearer <TOKEN>`
 
 * **Listar Usuarios**: `GET /api/users`
-    * Filtros opcionales: `?role=ADMIN` o `?username=text`
+    * Filtros opcionales: `?role=ADMIN` o `?username=texto`
 * **Crear Usuario**: `POST /api/users`
 * **Obtener por ID**: `GET /api/users/{id}`
 * **Actualizar Usuario**: `PUT /api/users/{id}`
 * **Bloquear Usuario**: `PATCH /api/users/{id}/block`
 
-### Sesiones (Requiere Header: `Authorization: Bearer <TOKEN>`)
+### 3. Operaciones de Sesión
+🔒 *Requiere Header:* `Authorization: Bearer <TOKEN>`
 
-* **Listar activas**: `GET /api/sessions`
+* **Listar mis sesiones**: `GET /api/sessions`
 * **Logout (Actual)**: `POST /api/sessions/logout?token=<TOKEN>`
 * **Logout (Masivo)**: `POST /api/sessions/logout-all?userId=<ID>`
 
-## 📚 Características Adicionales (Puntos Extra)
+---
 
-Además de los requerimientos funcionales, se han implementado mejoras técnicas para robustecer la aplicación:
+## 🧪 Datos de Prueba
 
-### Seguridad Avanzada (Autenticación/Autorización)
-Se ha implementado un sistema de seguridad personalizado mediante Tokens, superando el requisito de un mock simple.
-* **AuthenticationFilter**: Intercepta todas las peticiones a endpoints protegidos.
-* **Validación**: Verifica la presencia y validez del token `Bearer` contra la base de datos y el estado de la sesión.
-* **Protección**: Impide el acceso a operaciones sensibles (CRUD de usuarios, Logout) sin credenciales válidas.
+Al iniciar la aplicación (modo local H2), se precargan los siguientes usuarios para facilitar las pruebas:
 
-### Protección contra DoS (Rate Limiting)
-Implementación de un `RateLimitFilter` en memoria para proteger la API de abusos.
-* **Límite**: 10 peticiones por minuto por dirección IP.
-* **Respuesta**: Devuelve `429 Too Many Requests` si se excede el límite.
-* **Tecnología**: Uso de `ConcurrentHashMap` para gestión eficiente en entornos concurrentes.
-
-### Calidad y Testing
-Se han incluido pruebas unitarias para garantizar la fiabilidad de la lógica de negocio.
-* **Stack**: JUnit 5 + Mockito.
-* **Cobertura**: Tests aislados para `UserService` simulando el comportamiento del repositorio y mappers, verificando casos de éxito y mapeo de datos.
-
-
-## 🧪 Datos de Prueba (H2)
-
-La aplicación inicia con los siguientes usuarios precargados:
-
-# Usuarios de ejemplo en `T_USER`
-
- 👑 ADMINS
-
-| Usuario          | Contraseña | Rol   | Bloqueado | Fecha de creación   |
-|------------------|------------|-------|-----------|---------------------|
-| admin            | admin123   | ADMIN | false     | CURRENT_TIMESTAMP   |
-| adminBloqueado   | admin123   | ADMIN | true      | CURRENT_TIMESTAMP   |
-
- 👤 NO ADMINS
-
-| Usuario          | Contraseña | Rol   | Bloqueado | Fecha de creación   |
-|------------------|------------|-------|-----------|---------------------|
-| usuario1         | user123    | USER  | false     | CURRENT_TIMESTAMP   |
-| noEsAdmin        | admin123   | USER  | false     | CURRENT_TIMESTAMP   |
-| usuarioBloqueado | user123    | USER  | false     | CURRENT_TIMESTAMP   |
+| Usuario | Contraseña | Rol | Estado |
+| :--- | :--- | :--- | :--- |
+| **admin** | `admin123` | ADMIN | ✅ Activo |
+| **usuario1** | `user123` | USER | ✅ Activo |
+| **noEsAdmin** | `admin123` | USER | ✅ Activo |
+| **adminBloqueado**| `admin123` | ADMIN | ❌ Bloqueado |
+| **usuarioBloqueado**| `user123` | USER | ❌ Bloqueado |
 
 ---
 *Entregable para Ejercicio Técnico - vBote*
