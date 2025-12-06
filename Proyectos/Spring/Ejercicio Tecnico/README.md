@@ -30,6 +30,15 @@ Para garantizar la calidad del código, escalabilidad y mantenimiento, se ha opt
     * `AuthenticationFilter`: Validación de seguridad. Intercepta las peticiones y verifica la validez del token `Bearer` contra la base de datos.
 * **Base de Datos Volátil**: Se utiliza H2 con un script `data.sql` que precarga usuarios de prueba al iniciar la aplicación.
 
+### Calidad y Testing
+Se han incluido pruebas unitarias utilizando **JUnit 5** y **Mockito** para garantizar la robustez del código.
+
+* **Estrategia**: Tests aislados (Unit Tests) enfocados en la capa de Servicios (`@Service`), simulando repositorios y mappers.
+* **Cobertura**: 
+    * Se ha alcanzado una cobertura superior al **90%** en la lógica de negocio de usuarios (`UserService`), verificando tanto el "Happy Path" como los casos de error (Branch Coverage).
+    * Verificación de llamadas internas mediante `Mockito.verify()` para asegurar la integridad de los datos.
+* **Herramientas**: EclEmma para análisis de cobertura.
+
 ## ⚙️ Configuración y Ejecución
 
 ### Prerrequisitos
