@@ -15,8 +15,10 @@ import com.example.repository.SessionRepository;
 import java.io.IOException;
 import java.util.List;
 
+// Este objeto ejecuta las pruebas necesarias para validar la session y dejar entarr solo a los usuarios autentificados
+// Queremos que este sea el TERCER filtro para que se ejecuta después del log y del detector de limites
 @Component
-@Order(2) // Se ejecuta después del log
+@Order(2) 
 public class AuthenticationFilter extends OncePerRequestFilter 
 {
 

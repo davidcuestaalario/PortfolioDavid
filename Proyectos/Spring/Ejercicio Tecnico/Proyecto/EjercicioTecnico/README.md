@@ -10,6 +10,7 @@ API RESTful desarrollada con Spring Boot para la gestión de usuarios y sesiones
 * **H2 Database**: Base de datos en memoria para desarrollo y pruebas.
 * **Lombok**: Para reducir el código repetitivo (Boilerplate) y mejorar la legibilidad.
 * **Gradle**: Gestor de dependencias y automatización de construcción.
+* **Mockito**: Simulador de componentes para las pruebas unitarias
 
 ## 🛠️ Decisiones de Diseño
 
@@ -52,16 +53,37 @@ Para garantizar la calidad del código, escalabilidad y mantenimiento, se ha opt
 
 3.  **Acceso**: La API arrancará en `http://localhost:8080`.
 
+### Dockerización
+
+El proyecto incluye configuración para desplegar la API junto con una base de datos PostgreSQL contenerizada.
+
+**Archivos incluidos**
+* **Dockerfile**: Empaqueta la aplicación Spring Boot en una imagen OpenJDK 17 Alpine.
+* **docker-compose.yml**: Orquesta dos servicios:
+    1. `app`: La API REST (Puerto 8080).
+    2. `db`: Base de datos PostgreSQL 15 (Puerto 5432).
+
+**Comandos de despliegue**
+
+* Generar el artefacto JAR:
+   ```bash
+   ./gradlew bootJar
+   
+   
+   
+   
+   
+      
 ## 📚 Documentación de la API
 
-### 1. Autenticación (Público)
+### Autenticación
 Para acceder a los endpoints protegidos, primero debe obtener un token.
 
 * **Login**: `POST /api/sessions/login`
     * Body: `{ "username": "admin", "password": "admin123" }`
     * Retorna: `{ "token": "uuid-token-...", ... }`
 
-### 2. Usuarios (Requiere Header: `Authorization: Bearer <TOKEN>`)
+### Usuarios (Requiere Header: `Authorization: Bearer <TOKEN>`)
 
 * **Listar Usuarios**: `GET /api/users`
     * Filtros opcionales: `?role=ADMIN` o `?username=text`
@@ -70,11 +92,33 @@ Para acceder a los endpoints protegidos, primero debe obtener un token.
 * **Actualizar Usuario**: `PUT /api/users/{id}`
 * **Bloquear Usuario**: `PATCH /api/users/{id}/block`
 
-### 3. Sesiones (Requiere Header: `Authorization: Bearer <TOKEN>`)
+### Sesiones (Requiere Header: `Authorization: Bearer <TOKEN>`)
 
 * **Listar activas**: `GET /api/sessions`
 * **Logout (Actual)**: `POST /api/sessions/logout?token=<TOKEN>`
 * **Logout (Masivo)**: `POST /api/sessions/logout-all?userId=<ID>`
+
+## 📚 Características Adicionales (Puntos Extra)
+
+Además de los requerimientos funcionales, se han implementado mejoras técnicas para robustecer la aplicación:
+
+### Seguridad Avanzada (Autenticación/Autorización)
+Se ha implementado un sistema de seguridad personalizado mediante Tokens, superando el requisito de un mock simple.
+* **AuthenticationFilter**: Intercepta todas las peticiones a endpoints protegidos.
+* **Validación**: Verifica la presencia y validez del token `Bearer` contra la base de datos y el estado de la sesión.
+* **Protección**: Impide el acceso a operaciones sensibles (CRUD de usuarios, Logout) sin credenciales válidas.
+
+### Protección contra DoS (Rate Limiting)
+Implementación de un `RateLimitFilter` en memoria para proteger la API de abusos.
+* **Límite**: 10 peticiones por minuto por dirección IP.
+* **Respuesta**: Devuelve `429 Too Many Requests` si se excede el límite.
+* **Tecnología**: Uso de `ConcurrentHashMap` para gestión eficiente en entornos concurrentes.
+
+### Calidad y Testing
+Se han incluido pruebas unitarias para garantizar la fiabilidad de la lógica de negocio.
+* **Stack**: JUnit 5 + Mockito.
+* **Cobertura**: Tests aislados para `UserService` simulando el comportamiento del repositorio y mappers, verificando casos de éxito y mapeo de datos.
+
 
 ## 🧪 Datos de Prueba (H2)
 

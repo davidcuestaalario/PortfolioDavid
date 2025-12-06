@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  # APLICACION (Spring)
+  app:
+	# Construye la imagen usando el Dockerfile de esta carpeta
+    build: . 
+	# Conecta el puerto 8080 de tu PC con el 8080 del contenedor
+    ports:
+      - "8080:8080" 
+	# Espera a que la base de datos arranque antes de iniciar la app
+    depends_on:
+      - db 
+	# Sobrescribimos la config de H2 para usar PostgreSQL
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/vbotedb
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect
+
+  # BASE DE DATOS (PostgreSQL)
+  db:
+	# Usa una imagen oficial de PostgreSQL
+    image: postgres:15-alpine 
+    environment:
+      - POSTGRES_DB=vbotedb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"

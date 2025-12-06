@@ -12,9 +12,12 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 import java.time.LocalDateTime;
 
+// Est e es el filtro que registra los accesos al sistema y los muestra por LOG
+// utilizamos anotaciónes de Lombok para generar automáticamente el objeto 'log'
+// Queremos que este sea el SEGUNDO filtro, justo despues del detector de limites
 @Component
-@Order(1) // Este filtro se ejecuta primero
-@Slf4j // Anotación de Lombok para generar automáticamente el objeto 'log'
+@Order(2) 
+@Slf4j 
 public class RequestLogFilter extends OncePerRequestFilter 
 {
     // ---------------- FILTRADO ----------------- //
