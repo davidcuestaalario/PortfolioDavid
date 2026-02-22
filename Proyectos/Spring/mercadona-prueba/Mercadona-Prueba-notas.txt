@@ -1,0 +1,183 @@
+INSTALACIOENS Y CONFIGURACIONES INICIALES
+
+Tanto Maven como Gradle sirven exactamente para lo mismo: descargar automáticamente las librerías que necesitamos (las dependencias) y compilar el código para empaquetarlo. La diferencia principal radica en cómo escribimos sus instrucciones:
+
+Maven: Utiliza un archivo de configuración en formato XML (pom.xml). Es muy estricto, estructurado y se basa en la filosofía de "convención sobre configuración". Es el estándar histórico en Java, por lo que casi cualquier desarrollador sabe leerlo al instante.
+
+Gradle: Utiliza código (lenguajes Groovy o Kotlin) para su configuración. Es mucho más flexible y compila más rápido en proyectos gigantescos, pero esa flexibilidad puede hacer que sea más complejo de entender si el equipo usa configuraciones muy personalizadas.
+
+Hemos elegido Maven para este ejercicio porque aporta una estructura universal y directa. Al evaluador de la prueba le resultará familiar de un solo vistazo, permitiéndonos centrarnos puramente en resolver la lógica de negocio.
+
+Spring Data JPA para conectar nuestras clases de Java con una base de datos relacional de forma sencilla, H2 Database para la base de datos en memoria y Spring Web para crear la API web y manejar peticiones HTTP
+
+Spring Data JPA: ¡Correcto! Es la tecnología que traducirá automáticamente nuestras clases de Java a tablas de base de datos.
+
+H2 Database: ¡Correcto! Es nuestra base de datos en memoria. El requisito de la prueba exige que la aplicación se pueda ejecutar y probar fácilmente sin instalaciones complejas, y H2 cumple esto a la perfección.
+Spring Web. Esta es la dependencia clásica (Spring MVC) que incluye un servidor web integrado (Tomcat) y todo lo necesario para recibir peticiones HTTP de forma sencilla.
+
+
+
+DIAGRAMA DE CLASES 
+
+1. Tienda
+*  codigo (Primary Key, numérico)
+*  nombre (Texto)
+
+2. Seccion (Nuestro catálogo)
+*  nombre (Primary Key, texto)
+*  horas_necesarias (Numérico)
+
+3. Trabajador
+*  dni (Primary Key, texto)
+*  nombre (Texto)
+*  apellidos (Texto)
+*  horas_contrato (Numérico, máximo 8)
+*  codigo_tienda (Foreign Key, enlaza con la Tienda)
+
+4. Trabajador_Seccion (Tabla intermedia con datos extra)
+*  dni_trabajador (Foreign Key, parte de la Primary Key compuesta)
+*  nombre_seccion (Foreign Key, parte de la Primary Key compuesta)
+*  horas_asignadas (Numérico, la cantidad de horas que este trabajador echa en esta sección concreta).
+
+Asunciones iniciales: Las secciones son universales para toda la cadena de supermercados. Por tanto, no necesitamos una tabla intermedia Tienda_Seccion para unirlas. Asumimos que todas las tiendas tienen (o pueden tener) esas secciones predefinidas.
+
+Tenemos una clase basica para la tienda con sus datos basicos
+Tenemos una clase seccion basica con sus datos basicos
+Tenemos una clase Trabajador que esta relacionada con la clase tienda de tal forma que un trabajador solo puede trabajar para una tienda pero una tienda puede tener muchos trabajadores. La misma clase del trabajador hace las veces de relacion y contiene el numero de horas del contrato. (si un trabajador pudiera trabajar en mas de una tienda este dato tendria que moverse a una clase ficticia llamada contrato) 
+Tenemos una clase ficticia llamada Trabajador_Seccion que contendra el numero de horas trabajadas de cada trabajador en cada seccion. Esto es porque un trabajador puede trabajar en muchas secciones y una seccion puede tener muchos trabajadores. Esta relacion contiene el numero de horas trabajadas de cada vinculo. 
+
+IMPLEMENTACION 
+
+Vamos a clarificar las capas exactas que usaremos en Spring Boot:
+
+1. Controller (Controlador): Es la "puerta de entrada" de nuestra API. Su única función es recibir la petición HTTP de Postman, pasarle la pelota al Service, y devolver la respuesta final al usuario.
+
+2. Service (Servicio): Es el "cerebro" de la operación. Aquí es donde pondremos la lógica pesada, las validaciones (como comprobar que un trabajador no pase de 8 horas) y las sumas/restas.
+
+3. Repository (Repositorio): Es el encargado de hablar con H2. Spring nos genera esto casi mágicamente; solo le decimos "guárdame este dato" y él hace el código SQL por debajo.
+
+4. Entity (Entidad o Modelo): Son las clases Java que reflejan exactamente el diagrama de cajas. Se comunican con el Repository.
+
+5. DTO (Data Transfer Object): Los objetos que viajan desde y hacia el Controller. Nos sirven para no exponer nuestra base de datos tal cual al exterior.
+
+6. Mapper: Transforma DTOs en Entities (cuando entra información) y Entities en DTOs (cuando sale información). Su objetivo es poder controlar de forma directa como se hacen estas conversiones para garantizar que no se cuele nada en BD que no deberia y que no salga de BD nada que no deberia. 
+
+7. Como estamos usando una base de datos en memoria (H2), cada vez que paremos y arranquemos nuestra aplicación en Eclipse, la base de datos se borrará y empezará en blanco. Para no tener que meter las secciones a mano cada vez, la mejor práctica en Spring Boot es crear un archivo llamado data.sql que se ejecuta automáticamente al arrancar, insertando esos datos por nosotros.
+podemos ver una interfaz de la consola de h2 en: 
+'http://localhost:8081/h2-console' con 'jdbc:h2:mem:mercadonadb' 
+
+8. Hemos creado un @RestControllerAdvice
+Esta anotación de Spring es como un "vigilante". Se queda escuchando en toda la aplicación y, si algún controlador lanza un IllegalArgumentException o un RuntimeException, lo atrapa, extrae tu mensaje personalizado y lo devuelve en un formato bonito (JSON) con un código de error adecuado (como un 400 Bad Request en lugar de un 500).
+Esto es asi porque Postman trata como errores fallos controlados que el codigo si tiene en uenta y lanza su propia excepcion.
+sto es una medida de seguridad de las versiones modernas de Spring Boot. Por defecto, Spring oculta los mensajes de error internos para evitar que, si hay un fallo real en producción, se filtren detalles de la base de datos o de la arquitectura a posibles atacantes (imagina que el error fuera "Fallo al conectar con la base de datos con el usuario admin")
+
+CONSTRUCCION DE LA APLICACION
+
+La logica de crear usuarios incluuye validaciones para que no se superen las horas maximas asignadas
+La logica de las asignaciones tmb impide que se superen las horas maximas asignadas
+
+¿Por qué esta lógica está en TrabajadorService y no en otro sitio?
+Esta es una pregunta clásica de diseño guiado por el dominio (DDD - Domain-Driven Design).
+En nuestro modelo, la restricción principal del negocio ("un trabajador no puede exceder las 8 horas" y "un trabajador no puede superar sus horas de contrato") gira en torno al Trabajador. La Asignacion es solo un detalle técnico para conectar al trabajador con la Seccion.
+Como el trabajador es el "dueño" de sus horas de contrato, es su servicio el que debe orquestar y validar que las reglas de negocio sobre sus horas se cumplan. Si pusiéramos esta lógica en AsignacionService, la asignación tendría que estar preguntándole continuamente al trabajador por sus horas, invirtiendo la jerarquía natural del negocio.
+
+¿Por qué usamos DTOs (Data Transfer Objects)?
+Imagina que un usuario hace una petición para ver un Trabajador. Si devolvemos directamente nuestra entidad Trabajador de la base de datos, Spring intentaría convertirla a texto (JSON). Al hacerlo, vería que el Trabajador tiene una Tienda, entraría en la Tienda, y devolvería todos sus datos. Si la Tienda tuviera una lista de trabajadores, volvería a entrar, creando un bucle infinito.
+Además, por seguridad, no queremos exponer exactamente cómo son nuestras tablas. Los DTOs son "cajas a medida" que solo contienen la información exacta que queremos pedir o devolver.
+
+¿Porque no hemos hecho services para TiendaService o SeccionService o AsignacionService?
+Porque el enunciado solo pedia cosas de los Usuarios y aun que si que se han tratado temas como asignar usuarios a secciones lo cierto es que la clase Asignacion es una clase que en realidad no tiene sentido sin el usuario por lo que no tiene sentido que exisa por si misma y esas funcionalidades de asignar estan dentro del usuario en vez de en la asignacion
+
+
+
+
+FASE 2 
+
+La dirección nos pide generar dos informes para contrastar cómo van las tiendas:
+
+* Informe de Estado: Debe mostrar el nombre de la tienda, sus secciones y los trabajadores que están asignados a cada sección con el número de horas que van a pasar ahí.
+
+* Informe de Faltas: Debe mostrar el nombre de la tienda y aquellas secciones que no tienen cubiertas todas sus horas, indicando cuántas horas les faltan por cubrir.
+
+Decisión de Arquitectura:
+Podríamos meter todo esto en TiendaService o TrabajadorService, pero en un entorno profesional, cuando creamos funcionalidades de "solo lectura" que cruzan datos de varias tablas para generar informes estadísticos, lo mejor es crear un servicio dedicado. 
+Esto se llama Principio de Responsabilidad Única (SRP).
+Mi propuesta es que creemos un ReporteService y un ReporteController nuevos.
+A pesar de que el TiendaService o SeccionService o AsignacionService nisiquiera existen en una aplicacion real estas clases tendrian sus propias responsabilidades y sobrecargarlas mas con cosas que en verdad son independientes como las vistas de estos informes de las que estamos hablando seria una logica pesima meterlos junto con la logica principal y mejor hacer sus propias vistas independientes.
+
+Creamos esta estrutura de datos:
+Tenemos por un lado para los informes de estado la clase ReporteEstadoDTO que hara de Main y que contiene el nombre de la tienda y los estados de cada seccion de la tienda, cada uno de los cuales contiene el nombre de la seccion y el estado de cada trabajador, cada uno de los cuales contiene su nombre y las horas que realiza
+
+ReporteEstadoDTO
+^ nombre_tienda
+^ Listado de Estados Seccion
+  - nombre_seccion
+  - listado de estados de trabajadores
+    > nombre_trabajador
+	> horas del trabajador en la seccion
+
+y por otro lado el ReporteFaltasDTO que hará de main para el informe de las horas faltantes y contiene el nombre de la tienda y un listado de las horas faltantes de cada sección, que contiene a su vez el nombre de la sección y las horas que le faltan a la seccion.
+
+ReporteFaltasDTO
+^ nombre_tienda
+^ Listado de Faltas de Seccion
+  - nombre_seccion
+  - horas que faltan en la seccion
+ 
+En el service rellenamos esta estructura directamente desde la base de datos
+estamos haciendo una operación de coste O(S * A) (donde S es el número de secciones y A el número de asignaciones).
+Si el numero de secciones es pequeño el coste final sera bueno pero 
+Como el numero de secciones es constante podemos decir que el coste es lineal con el numero de asignaciones
+Si en el futuro tuviéramos miles de secciones, la forma de hacerlo estrictamente lineal con una sola pasada sería agrupar primero las asignaciones usando un HashMap de lo contrario esta estructura seria demasiado cara
+
+FASE 3
+No se pudo realizar la iteración 3 por incompatibilidad del SO con Docker Desktop
+El tiempo es limitado, el programa se puso revelde = paso de este punto
+
+FASE 4
+
+Hemos creado la nueva clase de Aptitud
+Hemos anadido una lista de aptitudes a la seccion mediante una tabla de Requisitos
+Hemos anadido una lista de aptitudes al trabajador mediante una tabla de Habilidades
+
+Hemos generado una nueva estructura para el reporte de aptitudes para una tienda
+AptitudesForTienda
+^ codigo de la tienda
+^ nombre de la tienda
+^ Listado de aptitudes por seccion
+  - nombre_seccion
+  - listado de aptitudes necesarias
+    > nombre de la aptitud
+	
+Me parece raro que se pida estoporque da igual a que tienda se lo pidas todas dan la lisat de todas las aptitudes de todas las secciones, esto es poruqe en ningun moemnto se ha pedido restringir las secciones que pertenecen a una tienda.
+ 
+FASE 5
+
+5.1 ANADIR REGLAS DE VALIDACION DE APTITUDES AL ANADIR HORAS ED TRABAJADORES A SECCIONES
+Añadido un metodo que comprueba si un trabajador tiene una aptitud y se verifica antes de anadirlo a una seccion. Si el trabajador tiene al menos una aptitud de la seccion se le considera apto y si no tiene ninguna no se le considera apto
+
+
+5.2 Refactorizar el cálculo de horas faltantes usando una query JPQL hiper-optimizada.
+Hasta ahora, para calcular las faltas de horas, traíamos todas las secciones a Java, traíamos todas las asignaciones a Java, y hacíamos la resta con bucles for en el ReporteService.
+ANOTACIONES:
+* En SQL, si intentas sumar las horas de una sección que no tiene a nadie asignado, el resultado del SUM no es 0, es NULL La función COALESCE(valor, 0) es un salvavidas que dice: "Intenta hacer el cálculo; si te da NULL, cámbialo por un 0"
+* Por qué LEFT y no INNER JOIN: Esto es vital. Un JOIN normal (Inner) une tablas buscando coincidencias. Si una sección (ej. Droguería) no tiene ninguna asignación, un INNER JOIN diría: "Como no hay coincidencia, borro Droguería de los resultados". ¡Pero nosotros queremos que Droguería salga en el reporte para decir que le faltan 16 horas! El LEFT JOIN le dice a la base de datos: "Tráeme TODAS las secciones (la tabla de la izquierda), y si no encuentras asignaciones en la derecha, no borres la sección, simplemente pon sus datos en blanco (NULL)".
+* Cuando haces un LEFT JOIN de Secciones con Asignaciones, si el "Horno" tiene a 3 trabajadores, la base de datos te genera 3 filas repetidas que dicen "Horno". Pero nosotros no queremos 3 filas, queremos que nos devuelva 1 sola fila por sección. El GROUP BY le dice a la base de datos: "Coge todas las filas que tengan el mismo nombre de sección, aplástalas/agrúpalas en una sola fila, y aplica la función SUM() a sus horas". cualquier columna del SELECT que no esté dentro de una función matemática (como SUM o COUNT), tiene que ir obligatoriamente en el GROUP BY.
+* EL HABING es como el WHERE pero que actua lo ultimo: La gran diferencia es temporal: el WHERE actúa antes de agrupar y sumar las horas. El HAVING actúa después. Como primero necesitamos que la base de datos agrupe las filas y haga la suma total de horas para saber si faltan, tenemos que usar HAVING para filtrar basándonos en ese resultado final calculado.
+
+5.3 CALIDAD: Crear los tests con JUnit y Mockito.
+* Pruebas de los Services: Hemos creado pruebas para el service del usuario alcanzando una cobertura del 90%
+En el mundo real, no, no basta y habria que hacer el resto de los services pero por ser una prueba tecnica aqui queda demostrado que para el resto es hacer lo mismo que en este. 
+
+* Pruebas de los Controladores: Deberíamos probar que si enviamos un JSON mal formado, el sistema devuelve un 400 Bad Request. O que si el Service lanza tu IllegalArgumentException, el controlador de verdad captura ese error y lo transforma en una respuesta HTTP correcta.
+
+* Pruebas de los Repositorios: Los repositorios que solo usan métodos de Spring Data (como findById o save) no se suelen testear, porque estaríamos testeando el código de los desarrolladores de Spring, no el nuestro. Sin embargo las querys JPQL personalizadas sí es nuestro y sí puede fallar si nos equivocamos en la sintaxis de la base de datos.
+
+
+5.4 DOCUMENTACION: Escribir un README.md estelar con tu diagrama de secuencia.
+* Se han realizado diagramas de clases para la interacion 1 y la modificacion de la iteracion 4 anadiendo las cnuevas clases de las aptitudes. 
+
+* Se han realizado diagramas de secuencia para las funcionalidades mas pesadas del programa: Crear usuario, anadir horas a un usuario, los reportes de Estado, faltas y aptitudes
+
+
+
