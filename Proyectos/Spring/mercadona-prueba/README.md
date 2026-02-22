@@ -59,7 +59,7 @@ Durante el desarrollo se han tomado decisiones arquitectónicas clave para garan
 
 ---
 
-## ⭐ Funcionalidades Adicionales (Extras implementados)
+## Funcionalidades Adicionales (Extras implementados)
 
 [cite_start]Para elevar el estándar técnico de la prueba, se han implementado los siguientes extras evaluables[cite: 134, 141]:
 
