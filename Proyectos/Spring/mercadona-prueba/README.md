@@ -2,7 +2,7 @@
 
 Este proyecto es una API RESTful desarrollada en Java con Spring Boot para la gestión de supermercados, trabajadores, secciones y asignaciones de horarios, cumpliendo con los requisitos de la prueba técnica solicitada.
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 * **Java 17+**
 * **Spring Boot 3.x** (Web, Data JPA)
 * [cite_start]**H2 Database**: Base de datos en memoria para facilitar las pruebas sin instalaciones externas[cite: 11].
@@ -11,7 +11,7 @@ Este proyecto es una API RESTful desarrollada en Java con Spring Boot para la ge
 
 ---
 
-## 🚀 Instrucciones de Ejecución
+## Instrucciones de Ejecución
 
 1. **Clonar o descargar** el proyecto en tu máquina local.
 2. **Importar el proyecto** en tu IDE favorito (Eclipse, IntelliJ, VSCode) como un proyecto Maven existente.
@@ -29,7 +29,7 @@ Para comprobar los datos en vivo, puedes acceder a la consola de la base de dato
 
 ---
 
-## 📬 Colección de Postman
+## Colección de Postman
 
 En la raíz de este proyecto encontrarás un archivo llamado `mercadona-prueba.postman_collection.json`. 
 [cite_start]Para probar la API[cite: 94]:
@@ -39,22 +39,22 @@ En la raíz de este proyecto encontrarás un archivo llamado `mercadona-prueba.p
 
 ---
 
-## 🏗️ Decisiones Arquitectónicas y de Diseño
+## Decisiones Arquitectónicas y de Diseño
 
 Durante el desarrollo se han tomado decisiones arquitectónicas clave para garantizar un código escalable, limpio y seguro:
 
-* **Domain-Driven Design (DDD) en Asignaciones:** La lógica de validación de horas se ha centralizado en `TrabajadorService`. [cite_start]Al ser el trabajador el "dueño" de sus horas de contrato, es su servicio el que orquesta y valida las reglas de negocio, evitando invertir la jerarquía natural[cite: 40, 42, 43].
+* **Domain-Driven Design (DDD) en Asignaciones:** La lógica de validación de horas se ha centralizado en `TrabajadorService`. [cite_start]Al ser el trabajador el propietario de sus horas de contrato, es su servicio el que orquesta y valida las reglas de negocio, evitando invertir la jerarquía natural[cite: 40, 42, 43].
 * [cite_start]**Single Responsibility Principle (SRP) en Reportes:** En lugar de sobrecargar los servicios de entidades básicas, se ha creado un `ReporteService` y `ReporteController` dedicados exclusivamente a cruzar datos de lectura para generar los informes estadísticos[cite: 54, 55, 56].
 * **Uso de DTOs y Mappers:** La capa de presentación está totalmente aislada del modelo de base de datos. [cite_start]Esto evita bucles infinitos en la serialización JSON [cite: 45, 47] [cite_start]y protege la estructura interna de la base de datos[cite: 48, 49].
 * [cite_start]**Global Exception Handler (`@RestControllerAdvice`):** Actúa como un interceptor global que captura excepciones de negocio (`IllegalArgumentException`) y las transforma en respuestas JSON estructuradas y limpias (ej. `400 Bad Request`), ocultando la traza del servidor por motivos de seguridad[cite: 35, 38].
 
 ---
 
-## 📊 Estado de las Iteraciones
+## Estado de las Iteraciones
 
 * ✅ **Iteración 1 (Desarrollo Básico):** Completada. [cite_start]API CRUD completa de trabajadores y sistema de asignación con validación estricta de 8 horas máximas[cite: 104, 108, 110].
 * ✅ **Iteración 2 (Reportes):** Completada. [cite_start]Generación de informes de Estado y Faltas[cite: 116, 117].
-* ⏭️ **Iteración 3 (Integración Docker):** Omitida. [cite_start]No se pudo realizar por incompatibilidad del Sistema Operativo con Docker Desktop. *Nota: Esta limitación técnica se ha compensado ampliando drásticamente la calidad y profundidad del resto del código mediante Funcionalidades Adicionales.*
+* ⏭️ **Iteración 3 (Integración Docker):** Omitida. [cite_start]No se pudo realizar por incompatibilidad del Sistema Operativo con Docker Desktop. *Nota: Esta limitación técnica se ha compensado ampliando la calidad y profundidad del resto del código mediante Funcionalidades Adicionales.*
 * ✅ **Iteración 4 (Ampliación de Modelo - Aptitudes):** Completada. [cite_start]Se ha modificado el modelo lógico utilizando relaciones `@ManyToMany` para añadir listas de aptitudes a Secciones y Trabajadores[cite: 132].
 
 ---
@@ -69,11 +69,11 @@ Durante el desarrollo se han tomado decisiones arquitectónicas clave para garan
 
 ---
 
-## 📈 Diagramas de Secuencia
+## Diagramas de Secuencia
 
-A continuación se detalla el flujo de datos de las operaciones más críticas del sistema. *(Si visualizas esto en un visor Markdown compatible, verás los gráficos generados).*
+A continuación se detalla el flujo de datos de las operaciones más críticas del sistema. *(Se puede visor en Markdown).*
 
-## 📈 Diagramas de Secuencia (Flujo Lógico Detallado)
+## Diagramas de Secuencia (Flujo Lógico Detallado)
 
 A continuación se detalla el flujo de datos exacto de las operaciones más críticas del sistema, reflejando las reglas de negocio, validaciones y acceso a base de datos.
 
@@ -228,11 +228,11 @@ sequenceDiagram
 
 ---
 
-## 🌟 Anexo: Experiencia Adicional (Seguridad y Autenticación)
+## Anexo: Experiencia Adicional (Seguridad y Autenticación)
 
 [cite_start]El documento de requisitos menciona la **Autenticación** como una de las funcionalidades adicionales valorables[cite: 139]. [cite_start]Dada la limitación de tiempo y la priorización de una cobertura de tests alta y optimización de base de datos (JPQL), he decidido no incluir esa capa en este proyecto para mantener su simplicidad de ejecución[cite: 140, 142].
 
-No obstante, si el equipo evaluador desea revisar mi experiencia implementando sistemas de seguridad en Spring Boot, les invito a consultar este otro proyecto reciente de mi portfolio personal:
+No obstante, si el equipo evaluador desea revisar mi experiencia implementando sistemas de seguridad en Spring Boot, pueden a consultar este otro proyecto reciente de mi portfolio personal:
 
 * 🔗 **[Proyecto con Autenticación y Seguridad BD](https://github.com/davidcuestaalario/PortfolioDavid/tree/main/Proyectos/Spring/Ejercicio%20Tecnico)**
 
