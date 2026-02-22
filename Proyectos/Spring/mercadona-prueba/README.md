@@ -71,7 +71,7 @@ Durante el desarrollo se han tomado decisiones arquitectónicas clave para garan
 
 ## Diagramas de Secuencia
 
-A continuación se detalla el flujo de datos de las operaciones más críticas del sistema. *(Se puede visor en Markdown).*
+A continuación se detalla el flujo de datos de las operaciones más críticas del sistema. *(Se puede ver en Markdown).*
 
 ## Diagramas de Secuencia (Flujo Lógico Detallado)
 
